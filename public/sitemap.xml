@@ -9,22 +9,32 @@
 
 <url>
   <loc>https://icerpazova.com/</loc>
-  <lastmod>2021-11-16T20:06:13+00:00</lastmod>
+  <lastmod>2021-11-26T15:08:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://icerpazova.com/novikurs/index.html</loc>
-  <lastmod>2021-11-16T20:06:13+00:00</lastmod>
+  <loc>https://icerpazova.com/robotika/index.html</loc>
+  <lastmod>2021-11-26T15:08:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://icerpazova.com/robotika/index.html</loc>
-  <lastmod>2021-11-16T20:06:13+00:00</lastmod>
+  <loc>https://icerpazova.com/3d/index.html</loc>
+  <lastmod>2021-11-26T15:08:07+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://icerpazova.com/novikurs/index.html</loc>
+  <lastmod>2021-11-26T15:08:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://icerpazova.com/ploteri/index.html</loc>
+  <lastmod>2021-11-26T15:08:07+00:00</lastmod>
+  <priority>0.70</priority>
 </url>
 <url>
   <loc>https://icerpazova.com/index.html</loc>
-  <lastmod>2021-11-16T20:06:13+00:00</lastmod>
+  <lastmod>2021-11-26T15:08:07+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
