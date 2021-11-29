@@ -8,18 +8,53 @@
 	border-right: 95vh solid transparent;
 	border-bottom: 95vh solid #F08113;
 	transition:ease 0.3s;
+	-webkit-animation:trianim1 ease 1s;
+	-webkit-animation-fill-mode: forwards;
+	animation:trianim1 ease 1s;
+	animation-fill-mode: forwards;
 }
 
 .rtriangle2{
 	position:absolute;
-	bottom:0vh;
+	bottom:-10vh;
 	left:-115vh;
 	width:0; 
 	height:0; 
-	border-left: 105vh solid transparent;
-	border-right: 105vh solid transparent;
-	border-bottom: 105vh solid #F6B676;
+	border-left: 110vh solid transparent;
+	border-right: 110vh solid transparent;
+	border-bottom: 110vh solid #F6B676;
 	transition:ease 0.3s;
+	-webkit-animation:trianim2 ease 1s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay:0.05s;
+	animation:trianim2 ease 1s;
+	animation-fill-mode: forwards;
+	animation-delay:0.05s;
+}
+
+@-webkit-keyframes trianim1{
+	0%{bottom:-105vh;left:-210vh}
+	80%{bottom:0vh;left:-95vh;}
+	100%{bottom:-10vh;left:-105vh;}
+}
+
+@keyframes trianim1{
+	0%{bottom:-105vh;left:-210vh}
+	80%{bottom:0vh;left:-95vh;}
+	100%{bottom:-10vh;left:-105vh;}
+}
+
+
+@-webkit-keyframes trianim2{
+	0%{bottom:-105vh;left:-220vh}
+	80%{bottom:0vh;left:-110vh;}
+	100%{bottom:-10vh;left:-115vh;}
+}
+
+@keyframes trianim2{
+	0%{bottom:-105vh;left:-220vh}
+	80%{bottom:0vh;left:-110vh;}
+	100%{bottom:-10vh;left:-115vh;}
 }
 
 .postsubtext2{
@@ -81,25 +116,49 @@
 .rtriangle{
 	position:absolute;
 	top:-10vh;
-	left:-35vh;
+	left:-40vh;
 	width:0; 
 	height:0; 
-	border-left: 35vh solid transparent;
-	border-right: 35vh solid transparent;
-	border-top: 35vh solid #F08113;
-	border-bottom: 35vh solid transparent;
+	border-left: 40vh solid transparent;
+	border-right: 40vh solid transparent;
+	border-top: 40vh solid #F08113;
+	border-bottom: 40vh solid transparent;
 }
 
 .rtriangle2{
 	position:absolute;
 	top:0vh;
-	left:-45vh;
+	left:-50vh;
 	width:0; 
 	height:0; 
-	border-left: 45vh solid transparent;
-	border-right: 45vh solid transparent;
-	border-top: 45vh solid #F6B676;
-	border-bottom: 45vh solid transparent;
+	border-left: 50vh solid transparent;
+	border-right: 50vh solid transparent;
+	border-top: 50vh solid #F6B676;
+	border-bottom: 50vh solid transparent;
+}
+
+@-webkit-keyframes trianim1{
+	0%{top:-105vh;left:-70vh}
+	80%{top:-5vh;left:-40vh;}
+	100%{top:-10vh;left:-45vh;}
+}
+
+@-webkit-keyframes trianim2{
+	0%{top:-45vh;left:-90vh}
+	80%{top:0vh;left:-50vh;}
+	100%{top:-10vh;left:-50vh;}
+}
+
+@keyframes trianim1{
+	0%{top:-105vh;left:-70vh}
+	80%{top:-5vh;left:-40vh;}
+	100%{top:-10vh;left:-45vh;}
+}
+
+@keyframes trianim2{
+	0%{top:-45vh;left:-90vh}
+	80%{top:0vh;left:-50vh;}
+	100%{top:-10vh;left:-50vh;}
 }
 
 .postsubtext2{
