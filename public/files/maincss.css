@@ -227,9 +227,9 @@ a:hover{
 
 .postsubtext{
 	width:40vw;
-	position:absolute;
-	top:24vw;
-	left:5vw;
+	position:relative;
+	margin-left:-50%;
+	margin-top:-10%;
 	font-size:1.5vw;
 	font-weight:normal;
 	font-family:gothic,montserrat;
@@ -241,12 +241,12 @@ a:hover{
 }
 
 @-webkit-keyframes mymove {
-  from {top:14vw;left:-100vw;}
-  to {top:24vw;left:5vw;}
+  from {margin-left:-50%;margin-top:-10%;}
+  to {margin-left:0;margin-top:10%;}
 }
 @keyframes mymove {
-  from {top:14vw;left:-100vw;}
-  to {top:24vw;left:5vw;}
+  from {margin-left:-50%;margin-top:-10%;}
+  to {margin-left:0;margin-top:10%;}
 }
 
 .triangle{
@@ -390,7 +390,7 @@ a:hover{
 }
 
 @-webkit-keyframes sponsorsanim{
-	0%{left:-40vw;}
+	0%{left:-40%;}
 	20%{left:10%;}
 	30%{left:10%;}
 	40%{left:40%;max-height:10vw;max-width:10vw;}
@@ -399,11 +399,11 @@ a:hover{
 	60%{left:60%;max-height:10vw;max-width:10vw;}
 	70%{left:90%;}
 	80%{left:90%;}
-	100%{left:140vw;}
+	100%{left:140%;}
 }
 
 @keyframes sponsorsanim{
-	0%{left:-40vw;}
+	0%{left:-40%;}
 	20%{left:10%;}
 	30%{left:10%;}
 	40%{left:40%;max-height:10vw;max-width:10vw;}
@@ -412,7 +412,7 @@ a:hover{
 	60%{left:60%;max-height:10vw;max-width:10vw;}
 	70%{left:90%;}
 	80%{left:90%;}
-	100%{left:140vw;}
+	100%{left:140%;}
 }
 
 .partners{
@@ -716,8 +716,10 @@ a:hover{
 	background:#F08113;
 	-webkit-animation:ftop linear 0.5s;
 	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: linear;
 	animation:ftop linear 0.5s;
 	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 }
 
 .frameright{
@@ -731,9 +733,11 @@ a:hover{
 	-webkit-animation:fright linear 0.5s;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-delay:0.5s;
+	-webkit-animation-timing-function: linear;
 	animation:fright linear 0.5s;
 	animation-fill-mode: forwards;
 	animation-delay:0.5s;
+	animation-timing-function: linear;
 }
 
 .framebottom{
@@ -747,9 +751,11 @@ a:hover{
 	-webkit-animation:fbottom linear 0.5s;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-delay:1s;
+	-webkit-animation-timing-function: linear;
 	animation:fbottom linear 0.5s;
 	animation-fill-mode: forwards;
 	animation-delay:1s;
+	animation-timing-function: linear;
 }
 
 .frameleft{
@@ -763,9 +769,11 @@ a:hover{
 	-webkit-animation:fleft linear 0.5s;
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-delay:1.5s;
+	-webkit-animation-timing-function: linear;
 	animation:fleft linear 0.5s;
 	animation-fill-mode: forwards;
 	animation-delay:1.5s;
+	animation-timing-function: linear;
 }
 
 
@@ -811,10 +819,7 @@ a:hover{
 
 .postsubtext{
 	font-size:5vw;
-	top:60vw;
 	width:90vw;
-	-webkit-animation: mymove2 1s;
-	animation: mymove2 1s;
 }
 
 .aboutus{
@@ -906,10 +911,12 @@ a:hover{
 	top:-100%;
 	animation:hlineanim linear 5s;
 	animation-delay:2s;
-	animation-fill-mode:forwards;\
+	animation-fill-mode:forwards;
+	animation-timing-function: linear;
 	-webkit-animation:hlineanim linear 5s;
 	-webkit-animation-delay:2s;
 	-webkit-animation-fill-mode:forwards;
+	-webkit-animation-timing-function: linear;
 }
 
 @-webkit-keyframes hlineanim{
@@ -933,12 +940,4 @@ a:hover{
 	100%{top:75vh;}
 }
 
-}
-@-webkit-keyframes mymove2 {
-  from {top:30vw;left:-100vw;}
-  to {top:60vw;left:5vw;}
-}
-@keyframes mymove2 {
-  from {top:30vw;left:-100vw;}
-  to {top:60vw;left:5vw;}
 }
