@@ -101,6 +101,8 @@ function slideshow(x){
 		slideop4.className=slideshift[(counter+3)%4];
 }
 
+var klik=function(){}
+
 function setpanorama(){
 	document.getElementById('sponsor1').classList.add("sponsoran");
 	setTimeout(function(){
@@ -113,49 +115,22 @@ function setpanorama(){
 			document.getElementById('sponsor4').classList.add("sponsoran");
 			},12000);
 	completed=0;
+
 	pannellum.viewer('panorama', {   
     "default": {
-        "firstScene": "ulaz",
+        "firstScene": "prostor",
         "sceneFadeDuration": 1000,
 		"mouseZoom":false,
 		"autoLoad":true
     },
 
     "scenes": {
-        "ulaz": {
-            "hfov": 150,
-            "pitch": 0,
-            "yaw": 0,
-            "type": "equirectangular",
-            "panorama": "files/test360.JPG",
-            /*"hotSpots": [
-                {
-                    "pitch": -2.1,
-                    "yaw": 132.9,
-                    "type": "scene",
-                    "text": "Spring House or Dairy",
-                    "sceneId": "house"
-                }
-            ]*/
-        }/*,
+        "prostor": {
+		'type': 'equirectangular','panorama': 'files/prostor.JPG','autoLoad':true,'compass':false,'autoRotate': -2,'hotSpots': [{'pitch':-15.25799,'yaw':-5.28,'type': 'info','text': 'Ulaz','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'Ulaz'}},{'pitch':-9.508599,'yaw':-144.48,'type': 'info','text': 'Pametna tabla','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'Pametna tabla'}},{'pitch':-9.066339,'yaw':123.84,'type': 'info','text': '3D i klasični štampači','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'3D i klasični štampači'}},{'pitch':-3.759214,'yaw':-3.84,'type': 'scene',"sceneId": "ulaz",'text': 'Izlaz na ulicu','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'Izlaz na ulicu'}}]}
+	,
 
-        "house": {
-            "hfov": 110,
-            "yaw": 5,
-            "type": "equirectangular",
-            "panorama": "files/test360.JPG",
-            "hotSpots": [
-                {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
-                    "type": "scene",
-                    "text": "Mason Circle",
-                    "sceneId": "ulaz",
-                    "targetYaw": -23,
-                    "targetPitch": 2
-                }
-            ]
-        }*/
+        "ulaz": {
+		'type': 'equirectangular','panorama': 'files/ulaz.JPG','autoLoad':true,'compass':false,'autoRotate': -2,'hotSpots': [{'pitch':-9.95086,'yaw':65.28,'type': 'info','text': 'Ulaz','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'Ulaz'}},{'pitch':-3.316953,'yaw':66.72,'type': 'scene','text': 'Ulaz na 3. sprat u konferencijsku salu',"sceneId": "prostor",'clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'Ulaz na 3. sprat u konferencijsku salu'}},{'pitch':-0.6633906,'yaw':21.12,'type': 'info','text': 'Erste banka','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'Erste banka'}},{'pitch':-4.643734,'yaw':-93.6,'type': 'info','text': 'Ulica Kralja Petra I Karađorđevića','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'Ulica Kralja Petra I Karađorđevića'}},{'pitch':-0.6633906,'yaw':-167.04,'type': 'info','text': 'Glavna raskrsnica','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'Glavna raskrsnica'}}]}
     }
 });
 }
