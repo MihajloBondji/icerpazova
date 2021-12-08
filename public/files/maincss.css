@@ -431,6 +431,10 @@ a:hover{
 	border:solid 4px white;
 }
 
+.custom-hotspot {
+	font-size:0.7vw;
+}
+
 .prostortext{
 	position:relative;
 	float:left;
@@ -850,6 +854,10 @@ a:hover{
 .vrview{
 	width:80vw;
 	height:60vw;
+}
+
+.custom-hotspot {
+	font-size:0.7vh;
 }
 
 .aboutusmore{
