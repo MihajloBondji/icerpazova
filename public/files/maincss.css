@@ -431,10 +431,6 @@ a:hover{
 	border:solid 4px white;
 }
 
-.custom-hotspot {
-	font-size:0.7vw;
-}
-
 .prostortext{
 	position:relative;
 	float:left;
@@ -856,9 +852,7 @@ a:hover{
 	height:60vw;
 }
 
-.custom-hotspot {
-	font-size:0.7vh;
-}
+.pnlm-hotspot{font-size:0.7vh;}
 
 .aboutusmore{
 	font-size:5vw;
