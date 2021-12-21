@@ -87,18 +87,17 @@ var scrollScript = function(){
 	}
 }
 
-const slideshift = ["secondarypic1", "slidemainpic", "secondarypic2", "displayNone"];
+const slideshift = ["secondarypic1", "slidemainpic", "secondarypic2"];
 var counter=0;
 
 function slideshow(x){
-
+	let num=slideshift.length;
 	if(x)
-		counter=(counter+1)%4;
-	else counter=(counter+3)%4;
-		slideop1.className=slideshift[counter%4];
-		slideop2.className=slideshift[(counter+1)%4];
-		slideop3.className=slideshift[(counter+2)%4];
-		slideop4.className=slideshift[(counter+3)%4];
+		counter=(counter+1)%num;
+	else counter=(counter+num)%num;
+		slideop1.className=slideshift[counter%num];
+		slideop2.className=slideshift[(counter+1)%num];
+		slideop3.className=slideshift[(counter+2)%num];
 }
 
 var klik=function(){}
