@@ -94,7 +94,7 @@ function slideshow(x){
 	let num=slideshift.length;
 	if(x)
 		counter=(counter+1)%num;
-	else counter=(counter+num)%num;
+	else counter=(counter+num-1)%num;
 		slideop1.className=slideshift[counter%num];
 		slideop2.className=slideshift[(counter+1)%num];
 		slideop3.className=slideshift[(counter+2)%num];
