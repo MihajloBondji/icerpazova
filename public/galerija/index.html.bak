@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	  <title>ICER - Robotika</title>
+	  <title>ICER - Galerija</title>
 	  <meta charset="utf-8" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	  <link rel="stylesheet" href="../files/maincss.css" />
 	  <link rel="stylesheet" href="../files/kurscss.css" />
+	  <link rel="stylesheet" href="galerija.css" />
 	  <script src="../files/jsscript.js"></script>
 	  <link rel="shortcut icon" type="image/jpg" href="../favicon.png"/>
   </head>
@@ -16,33 +17,11 @@
 		<div class="home2">
 			<div class="rtriangle2"></div>
 			<div class="rtriangle"></div>
-			<a href="https://forms.gle/E9DxmGrHRNNkmupu9" target="_blank"><img src="../files/robotikaslika.png" class="postimage"></a>
-			<div class="posttext2">
-				Robotika / Elektronika
-			<div class="postsubtext2">
-			<table><tr><th style="vertical-align: text-top;padding-right:2vw;"><img src="../files/check.svg" class="check"></th><td>
-				Na ovom kursu ćemo ući u svet elektronike!<br>
-				Imaćete priliku da saznate šta je to mikrokontroler, kao i neke osnovne elektronske komponente.
-			</td></tr></table><br>
-			<table><tr><th style="vertical-align: text-top;padding-right:2vw;"><img src="../files/check.svg" class="check"></th><td>
-				Naučićete da napravite semafor, sintisajzer, autić koji izbegava prepreke i mnoge druge zanimljive i korisne stvari.
-			</td></tr></table><br>
-			<table><tr><th style="vertical-align: text-top;padding-right:2vw;"><img src="../files/check.svg" class="check"></th><td>
-				Takođe ćemo videti šta je sve potrebno da bi se napravili neki razni jednostavni roboti korišćenjem mikrokontrolera.
-			</td></tr></table><br>
-			<table><tr><th style="vertical-align: text-top;padding-right:2vw;"><img src="../files/check.svg" class="check"></th><td>
-				Putem interaktivnih predavanja i praktičnih radionica upoznaćete se sa svim neophodnim komponentama i naučiti kako da ih koristite za sopstvene ideje i projekte.
-			</td></tr></table><br>
-			<table><tr><th style="vertical-align: text-top;padding-right:2vw;"><img src="../files/check.svg" class="check"></th><td>
-				Na kraju kursa imaćete priliku da svoju ideju sprovedete u realnost uz podršku predavača.
-			</td></tr></table><br>
-			<table><tr><th style="vertical-align: text-top;padding-right:2vw;"><img src="../files/check.svg" class="check"></th><td>
-				Kompletan kurs uključujući sva predavanja i materijale je u potpunosti <b style="color:#F08113">besplatan</b> za sve članove ICER-a.
-			</td></tr></table>
-			<table><tr><th style="vertical-align: text-top;padding-right:2vw;"></th><td>
-				<b>Prijave su zatvorene!</b>
-			</td></tr></table>
-			</div>
+			<div class="naslovGalerije">Galerija</div>
+			<div class="categoryHolder">
+				<a href="" target="_blank"><img src="3d.jpg" class="categoryDiv"></a>
+				<a href="" target="_blank"><img src="prostorije.jpg" class="categoryDiv"></a>
+				<a href="" target="_blank"><img src="robotika.jpg" class="categoryDiv"></a>
 			</div>
 		</div>
 		
