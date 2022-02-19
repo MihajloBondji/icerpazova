@@ -106,13 +106,19 @@ function setpanorama(){
 	document.getElementById('sponsor1').classList.add("sponsoran");
 	setTimeout(function(){
 			document.getElementById('sponsor2').classList.add("sponsoran");
-			},4000);
+			},2500);
 	setTimeout(function(){
 			document.getElementById('sponsor3').classList.add("sponsoran");
-			},8000);
+			},5000);
 	setTimeout(function(){
 			document.getElementById('sponsor4').classList.add("sponsoran");
-			},12000);
+			},7500);
+	setTimeout(function(){
+			document.getElementById('sponsor5').classList.add("sponsoran");
+			},10000);
+	setTimeout(function(){
+			document.getElementById('sponsor6').classList.add("sponsoran");
+			},12500);
 	completed=0;
 
 	pannellum.viewer('panorama', {   

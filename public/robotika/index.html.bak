@@ -18,7 +18,8 @@
 			<div class="rtriangle"></div>
 			<a href="https://forms.gle/E9DxmGrHRNNkmupu9" target="_blank"><img src="../files/robotikaslika.png" class="postimage"></a>
 			<div class="posttext2">
-				Robotika / Elektronika
+				Robotika / Elektronika<br>
+				Prijave su zatvorene!
 			<div class="postsubtext2">
 			<table><tr><th style="vertical-align: text-top;padding-right:2vw;"><img src="../files/check.svg" class="check"></th><td>
 				Na ovom kursu ćemo ući u svet elektronike!<br>
@@ -38,9 +39,6 @@
 			</td></tr></table><br>
 			<table><tr><th style="vertical-align: text-top;padding-right:2vw;"><img src="../files/check.svg" class="check"></th><td>
 				Kompletan kurs uključujući sva predavanja i materijale je u potpunosti <b style="color:#F08113">besplatan</b> za sve članove ICER-a.
-			</td></tr></table>
-			<table><tr><th style="vertical-align: text-top;padding-right:2vw;"></th><td>
-				<b>Prijave su zatvorene!</b>
 			</td></tr></table>
 			</div>
 			</div>
@@ -70,27 +68,34 @@
 			</a>
 			</span>
 			</div>
-			<div style="text-align:center;align-self: center">
-			<span class="newline" style="margin-bottom:0;">
+			<div style="text-align:center;align-self: stretch;display:flex;flex-direction:column;align-items:center;justify-content: space-around;">
+			<span class="newline">
 				<a class="socialsa" href="tel:+381648229473">
 					+381 648229473
 				</a>
 			</span>
 				
-			<span class="newline" style="margin:1vw 0;">
+			<span class="newline">
 				<a class="socialsa" href="mailto:icerpazova@gmail.com">
 					icerpazova@gmail.com
 				</a>
 			</span>
 				
-			<span class="newline" style="margin:1.5vw 0;">
+			<!--<span class="newline">
 				<a class="socialsa" href="https://www.google.com/maps/place/44%C2%B059'06.5%22N+20%C2%B009'32.1%22E/@44.9851353,20.1574484,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d44.9851328!4d20.1589092" target="_blank">
-					Kralja Petra I Karađorđevića 2, 3. sprat
+					Kralja Petra I Karađorđevića 2, 3. sprat,<br>
+					22300 Stara Pazova
+				</a>
+			</span>-->
+			
+			<span class="newline">
+				<a class="socialsa" href="files/ICER_identifikacija.pdf" target="_blank">
+					Poslovni podaci
 				</a>
 			</span>
 			</div>
 			<div style="align-self: center">
-				<img src="../files/logo_transparent_text.png" class="logocontact">
+				<img src="files/logo_transparent_text.png" class="logocontact">
 			</div>
 		</div>
 	</div>

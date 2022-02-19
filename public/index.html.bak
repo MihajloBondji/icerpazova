@@ -84,13 +84,13 @@
 			<div class="kursevi">
 			<div class="kursevislike">
 				<div class="slideshow">
-					<!-- <div class="arrslide" onclick="slideshow(0)">&#9665;</div> -->
+					<div class="arrslide" onclick="">&#9665;</div><!--slideshow(0)-->
 					<div class="slidepic">
 						<a href="novikurs/index.html"><img src="files/tvojaideja.png" class="slidemainpic" id="slideop3"></a>
 						<!-- <a href="novikurs/index.html"><img src="files/uskorokursevi.png" class="secondarypic1" id="slideop1"></a> -->
 						<!-- <a href="robotika/index.html"><img src="files/robotikaslika.png" class="slidemainpic" id="slideop2"></a> -->
 					</div>
-					<!-- <div class="arrslide" onclick="slideshow(1)">&#9655;</div> -->
+					<div class="arrslide" onclick="">&#9655;</div><!--slideshow(1)-->
 				</div>
 			</div>
 				<div class="kursevitekst">
@@ -145,6 +145,7 @@
 			<a href="https://starapazova.rs/" target="_blank"><img src="files/opstina.png" class="sponsor" id="sponsor2"></a>
 			<a href="https://www.facebook.com/profile.php?id=100068936268404" target="_blank"><img src="files/mzlogo.png" class="sponsor" id="sponsor3"></a>
 			<a href="http://inosrem.rs/" target="_blank"><img src="files/icsp.png" class="sponsor" id="sponsor4"></a>
+			<a href="http://apv.visokoobrazovanje.vojvodina.gov.rs/" target="_blank"><img src="files/sekretarijat.png" class="sponsor" id="sponsor5"></a>
 		</div>
 		
 		<div class="kontaktdiv">
@@ -184,10 +185,16 @@
 				</a>
 			</span>
 				
-			<span class="newline">
+			<!--<span class="newline">
 				<a class="socialsa" href="https://www.google.com/maps/place/44%C2%B059'06.5%22N+20%C2%B009'32.1%22E/@44.9851353,20.1574484,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d44.9851328!4d20.1589092" target="_blank">
 					Kralja Petra I Karađorđevića 2, 3. sprat,<br>
 					22300 Stara Pazova
+				</a>
+			</span>-->
+			
+			<span class="newline">
+				<a class="socialsa" href="files/ICER_identifikacija.pdf" target="_blank">
+					Poslovni podaci
 				</a>
 			</span>
 			</div>

@@ -20,7 +20,7 @@
 			<div class="naslovGalerije">Galerija</div>
 			<div class="categoryHolder">
 				<a href="https://drive.google.com/drive/folders/1AwdtbTG8jBJKIWnT1tL-tprzaWqLigqa?usp=sharing" target="_blank"><img src="3d.jpg" class="categoryDiv"></a>
-				<a href="" target="_blank"><img src="prostorije.jpg" class="categoryDiv"></a>
+				<a href="https://drive.google.com/drive/folders/1pfr8_e7hfH6NOl4CBEHVg_zQDDkgPZMA?usp=sharing" target="_blank"><img src="prostorije.jpg" class="categoryDiv"></a>
 				<!-- <a href="" target="_blank"><img src="robotika.jpg" class="categoryDiv"></a> -->
 			</div>
 		</div>
@@ -49,27 +49,34 @@
 			</a>
 			</span>
 			</div>
-			<div style="text-align:center;align-self: center">
-			<span class="newline" style="margin-bottom:0;">
+			<div style="text-align:center;align-self: stretch;display:flex;flex-direction:column;align-items:center;justify-content: space-around;">
+			<span class="newline">
 				<a class="socialsa" href="tel:+381648229473">
 					+381 648229473
 				</a>
 			</span>
 				
-			<span class="newline" style="margin:1vw 0;">
+			<span class="newline">
 				<a class="socialsa" href="mailto:icerpazova@gmail.com">
 					icerpazova@gmail.com
 				</a>
 			</span>
 				
-			<span class="newline" style="margin:1.5vw 0;">
+			<!--<span class="newline">
 				<a class="socialsa" href="https://www.google.com/maps/place/44%C2%B059'06.5%22N+20%C2%B009'32.1%22E/@44.9851353,20.1574484,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d44.9851328!4d20.1589092" target="_blank">
-					Kralja Petra I Karađorđevića 2, 3. sprat
+					Kralja Petra I Karađorđevića 2, 3. sprat,<br>
+					22300 Stara Pazova
+				</a>
+			</span>-->
+			
+			<span class="newline">
+				<a class="socialsa" href="files/ICER_identifikacija.pdf" target="_blank">
+					Poslovni podaci
 				</a>
 			</span>
 			</div>
 			<div style="align-self: center">
-				<img src="../files/logo_transparent_text.png" class="logocontact">
+				<img src="files/logo_transparent_text.png" class="logocontact">
 			</div>
 		</div>
 	</div>
