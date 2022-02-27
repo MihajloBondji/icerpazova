@@ -70,13 +70,13 @@
 			</span>-->
 			
 			<span class="newline">
-				<a class="socialsa" href="files/ICER_identifikacija.pdf" target="_blank">
+				<a class="socialsa" href="../files/ICER_identifikacija.pdf" target="_blank">
 					Poslovni podaci
 				</a>
 			</span>
 			</div>
 			<div style="align-self: center">
-				<img src="files/logo_transparent_text.png" class="logocontact">
+				<img src="../files/logo_transparent_text.png" class="logocontact">
 			</div>
 		</div>
 	</div>
