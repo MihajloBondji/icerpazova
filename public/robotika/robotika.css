@@ -25,7 +25,7 @@
 	float: left;
 	width:29%;
 	margin: 0 1.5%;
-	border: #bfbfbf 2px solid;
+	border: #3266cc 2px solid;
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -54,10 +54,11 @@
 
 .linksTitle{
 	display: block;
-	color:#bfbfbf;
+	color:#3266cc;
 	font-family: Gothic;
 	font-size: 2vw;
 	width:100%;
+	text-decoration: underline;
 }
 
 .linksText{
@@ -71,15 +72,15 @@
 }
 
 .hoveringA:hover .linksDiv{
-	border-color: #3266cc;
+	border-color: #F08113;
 	background-color: #f8f8f8;
 }
 .linksDiv:hover{
-	border-color: #3266cc;
+	border-color: #F08113;
 }
 
 .hoveringA:hover .linksTitle{
-	color: #3266cc;
+	color: #F08113;
 }
 
 .buttonTermin{
