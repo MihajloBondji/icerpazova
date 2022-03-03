@@ -84,13 +84,13 @@
 			<div class="kursevi">
 			<div class="kursevislike">
 				<div class="slideshow">
-					<div class="arrslide" onclick="">&#9665;</div><!--slideshow(0)-->
+					<div class="arrslide" onclick="slideshow(0)">&#9665;</div><!--slideshow(0)-->
 					<div class="slidepic">
-						<a href="novikurs/index.html"><img src="files/tvojaideja.png" class="slidemainpic" id="slideop3"></a>
-						<!-- <a href="novikurs/index.html"><img src="files/uskorokursevi.png" class="secondarypic1" id="slideop1"></a> -->
-						<!-- <a href="robotika/index.html"><img src="files/robotikaslika.png" class="slidemainpic" id="slideop2"></a> -->
+						<a href="novikurs/index.html"><img src="files/tvojaideja.png" class="secondarypic1" id="slideop1"></a>
+						<a href="novikurs/index.html"><img src="files/uskorokursevi.png" class="slidemainpic" id="slideop2"></a>
+						<a href="robotika/index.html"><img src="galerija/robotika.jpg" class="secondarypic2" id="slideop3"></a>
 					</div>
-					<div class="arrslide" onclick="">&#9655;</div><!--slideshow(1)-->
+					<div class="arrslide" onclick="slideshow(1)">&#9655;</div><!--slideshow(1)-->
 				</div>
 			</div>
 				<div class="kursevitekst">
@@ -212,6 +212,7 @@
 		<span class="newline"><a class="headerLinks" onclick="setTimeout('menu()',300);" href="#uclanise"><span id="uclanisespan" class="linija"></span><span id="uclanisehead">Učlani se!</span></a></span>
 		<span class="newline"><a class="headerLinks" onclick="setTimeout('menu()',300);" href="#prijatelji"><span id="prijateljispan" class="linija"></span><span id="prijateljihead">Prijatelji</span></a></span>
 		<span class="newline"><a class="headerLinks" onclick="setTimeout('menu()',300);" href="galerija/index.html"><span id="galerijaspan" class="linija"></span><span id="galerijahead">Galerija</span></a></span>
+		<span class="newline"><a class="headerLinks" onclick="setTimeout('menu()',300);" href="robotika/index.html"><span id="robotikamaterijalispan" class="linija"></span><span id="robotikamaterijalihead">Robotika materijali</span></a></span>
 		<span class="newline"><a class="headerLinks" onclick="setTimeout('menu()',300);" href="#kontakt"><span id="kontaktspan" class="linija"></span><span id="kontakthead">Kontakt</span></a></span>
 		</span>
 		<img src="files/logo_transparent.png" class="head_logo" id="headLogo" onclick="location.reload();" alt="ICER">
@@ -235,9 +236,6 @@
 	<script>
 	window.addEventListener("scroll", scrollScript);
 	window.addEventListener('click', function(e){
-    <!-- if (!(document.getElementById('prostor1').contains(e.target)||document.getElementById('prostor2').contains(e.target)||document.getElementById('prostor3').contains(e.target))){ -->
-	<!-- { -->
-		<!-- prostor(0);  -->
 		 if (!(document.getElementById('header').contains(e.target)))
 		checkmenu();
 });
