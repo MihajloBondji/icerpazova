@@ -101,6 +101,15 @@
 	min-height:100vh;
 	background:rgba(50, 102, 204,1);
 }
+.home3{
+	width:100%;
+	position:relative;
+	float:left;
+	height:auto;
+	max-height:fit-content;
+	min-height:100vh;
+	background:white;
+}
 
 @media screen and (max-width:900px){
 .postimage{
