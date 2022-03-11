@@ -16,6 +16,7 @@
 	position:relative;
 	float:left;
 	margin-left: 3vw;
+	margin-bottom:3vw;
 	width:66vw;
 	text-align: center;
 }
@@ -34,6 +35,25 @@
 	min-height: 25vw;
 	text-align: center;
 	padding: 2vw;
+}
+
+.obavestenje{
+	position: relative;
+	float: left;
+	width:97%;
+	margin: 0 1.5%;
+	border: #F08113 2px solid;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border-radius: 20px;
+	height: auto;
+	min-height: 25vw;
+	text-align: center;
+	padding: 2vw;
+	font-family: Gothic;
+	font-size: 1.5vw;
+	text-align:left;
 }
 
 .naslovMaterijali{
@@ -132,6 +152,10 @@
 	}
 
 	.linksText{
+		font-size: 2vh;
+	}
+
+	.obavestenje{
 		font-size: 2vh;
 	}
 

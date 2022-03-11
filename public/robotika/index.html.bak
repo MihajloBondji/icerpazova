@@ -7,7 +7,6 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	  <link rel="stylesheet" href="../files/maincss.css" />
 	  <link rel="stylesheet" href="../files/kurscss.css" />
-	  <link rel="stylesheet" href="../galerija/galerija.css" />
 	  <link rel="stylesheet" href="robotika.css" />
 	  <script src="../files/jsscript.js"></script>
 	  <link rel="shortcut icon" type="image/jpg" href="../favicon.png"/>
@@ -19,13 +18,68 @@
 			<!--slika-->
 			<div class="categoryHolder">
 				<img src="../galerija/robotika.jpg" class="categoryDiv">
+				<div class="categoryDiv2">
+					<div class="naslovMaterijali">OBAVEŠTENJE</div>
+					
+					<div class="obavestenje">
+					
+					Od naredne nedelje, radi bolje.. kurs ćemo organizovati na sledeći način.<br>
+					Podelićemo se u 2 grupe: 
+					<ul>
+						<li>U prvoj grupi ćemo raditi sa pripremljenim vežbama sa gotovim kodom (primeri: sintisajzer, radar, ventilatori, čitači kartica i jednostavni roboti) gde ćete imati priliku da ih sami sklapate prateći uputstva. Cilj je da vas na zanimljivim primerima uvedemo u svet elektronike/robotike bez zalaženja u detalje. Ovu grupu preporučujemo mlađim uzrastima.</li>
+						
+						<li>U drugoj grupi ćemo prolaziti detaljno kroz sve elektronske komponente koje su nam na raspolaganju, kako se one povezuju, koja je njihova namena i kako da ih koristimo u svojim projektima. Prolazićemo i kroz osnove programiranja kako bismo znali i da ih upotrebimo i za konkretne uređaje. Za ovu grupu neophodno je dobro snalaženje sa računarima kako bismo mogli efikasnije da sprovodimo radionice. Ovu grupu preporučujemo starijim uzrastima.</li>
+					</ul>
+					
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSd0BRi95js6ucPJGI8tw8NmIb7EVS-vMUGXBLg2t5fznx3InQ/viewform?usp=sf_link" target="_blank">
+								<div class="buttonTermin">Izaberi grupu!</div>
+							</a>
+					
+					Napomena: Moguće je preći iz jedne u drugu grupu ukoliko primetite da vam je previše teško/lako u nekoj od grupa.
+					
+					</div>
+					
+					<div class="naslovMaterijali">MATERIJALI</div>
+
+					<a href="https://www.tinkercad.com/joinclass/31SJDZTJ6Y7Y" target="_blank" title="Učionica" class="hoveringA">
+						<div class="linksDiv">
+							<img src="tinkercad.svg" class="linkIcon" alt="Učionica">
+							<span class="linksTitle">Učionica</span>
+							<span class="linksText">
+								Pristup Tinkercad učionici. Ovde možete videti sve vežbe koje radimo na časovima u simulatoru sa kôdom. 
+								<br>Nickname vam je &#60;imeprezime&#62; 
+								<br>(primer: petarpetrovic).
+							</span>
+						</div>
+					</a>
+
+					<a href="https://drive.google.com/drive/folders/1I8mTCqs9OldDnI1r7zIiCm7Jy8ME9N_l?usp=sharing" target="_blank" title="Materijali" class="hoveringA">
+						<div class="linksDiv">
+							<img src="files.svg" class="linkIcon" alt="Materijali">
+							<span class="linksTitle">Materijali</span>
+							<span class="linksText">
+								Ovde možete pronaći sve materijale koje koristimo na časovima (prezentacije, linkove, programe...).
+							</span>
+						</div>
+					</a>
+
+					
+						<div class="linksDiv">
+							<a href="https://docs.google.com/spreadsheets/d/1VWYWalUz_l5wVF8-xH9tx0pRPww7FCFNFH8J2pfEQo8/edit?usp=sharing" target="_blank" title="Raspored" class="hoveringA">
+							<img src="calendar.svg" class="linkIcon" alt="Raspored">
+							<span class="linksTitle">Termini</span>
+							<span class="linksText">
+								Ovde možete videti svoj termin, u prvom redu je naznačen datum.
+								<br><br>
+								Zahtev za promenu termina možete poslati ovde:
+							</a>
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSd0BRi95js6ucPJGI8tw8NmIb7EVS-vMUGXBLg2t5fznx3InQ/viewform?usp=sf_link" target="_blank">
+								<div class="buttonTermin">Promeni termin</div>
+							</a>
+							</span>
+						</div>
+				</div>
 			</div>
-			<!-- link za tinker -->
-			<!-- materijali -->
-			<!-- termini -->
-			<!-- zahtev za promenu termina -->
-			<!-- linkovi -->
-			<!-- . -->
 			
 		</div>
 		
@@ -87,7 +141,6 @@
 	<div class="header" id="header">
 		<span class="linksHolder" id="linksHolder">
 		<span class="newline"><a class="headerLinks" onclick="setTimeout('menu()',300);" href="../index.html"><span id="homespan" class="linija"></span><span id="homehead">Početna</span></a></span>
-		<span class="newline"><a class="headerLinks" onclick="setTimeout('menu()',300);" href="#"><span id="kursevispan" class="linija"></span><span id="kursevihead">Prijavi se!</span></a></span>
 		<span class="newline"><a class="headerLinks" onclick="setTimeout('menu()',300);" href="#kontakt"><span id="kontaktspan" class="linija"></span><span id="kontakthead">Kontakt</span></a></span>
 		</span>
 		<a href="../index.html"><img src="../files/logo_transparent.png" class="head_logo" id="headLogo" onclick="location.reload();" alt="ICER"></a>
