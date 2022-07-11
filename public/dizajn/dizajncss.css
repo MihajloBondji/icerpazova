@@ -1,0 +1,7 @@
+@media screen and (max-width:900px){
+	.categoryHolder{
+		flex-direction:column;
+		width:60vw;
+		margin:18vh 15vw;
+	}
+}
