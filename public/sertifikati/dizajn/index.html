@@ -1,0 +1,57 @@
+<!--Created by Mihajlo Bondji http://mihajlobondji.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <title>ICER - Sertifikati</title>
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <link rel="shortcut icon" type="image/jpg" href="../../favicon.png"/>
+	  
+	  <link rel="stylesheet" href="../files/css.css" />
+	  <script>
+		
+	var scrollScript = function(){
+	var scr=window.scrollY;
+		if(scr>0)
+			document.getElementById("arr").className="displnone";
+		else document.getElementById("arr").className="downarr";
+	}
+	  </script>
+  </head>
+  <body>
+	<div class="main">
+
+		<div class="sertifikatTemplate shadow">
+			<img src="../../files/arr.svg" class="downarr" id="arr">
+			<div class="ime" id="ime"></div>
+			<div class="broj" id="broj"></div>
+		</div>
+
+		<div class="desc">
+			Ovaj sertifikat je validan i potvrđuje da je <span id="imeiprezime"></span> odslušao/la kurs osnova grafičkog dizajna koji obuhvata:
+		</div>
+		
+	</div>
+	<script>
+		var lista=[
+		"Neispravan link",
+		"Andrej Hrgovic"
+		];
+
+		var url = new URL(window.location.href);
+		var c = url.searchParams.get("n");
+		if(c==null)
+		{
+			c=0;
+			//location.href="../404.html";
+		}
+		c=c-0;
+		document.getElementById("ime").innerHTML=lista[c];
+		document.getElementById("imeiprezime").innerHTML=lista[c];
+		c+=200;
+		document.getElementById("broj").innerHTML=c+"/2022";
+		
+	window.addEventListener("scroll", scrollScript);
+	</script>
+  </body>
+ </html>
