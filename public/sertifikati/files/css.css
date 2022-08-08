@@ -1,0 +1,71 @@
+@font-face {
+    font-family: allura;
+    src: url("../../fonts/allura.ttf");
+}
+@font-face {
+    font-family: gothic;
+    src: url("../../fonts/gothic.TTF");
+}
+::-webkit-scrollbar {
+width: 10px;
+}
+::-webkit-scrollbar-thumb {
+background: #444444;
+border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #cccccc;
+}
+
+body{
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-tap-highlight-color: transparent;
+overflow-x:hidden;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+a{
+text-decoration:none;
+}
+
+a:visited{
+color:inherit
+}
+
+a:hover{
+text-decoration:none;
+}
+
+.sertifikatTemplate{
+    width: 60vw;
+    position: absolute;
+    top: 0;
+    left: 20vw;
+}
+
+.ime{
+    position: absolute;
+    top:18vw;
+    left:0;
+    width: 100vw;
+    text-align: center;
+    font-size: 4vw;
+    font-family: allura;
+    color:#3266cc;
+}
+
+.broj{
+    position: absolute;
+    top:36.3vw;
+    left:27vw;
+    text-align: center;
+    font-size: 1vw;
+    font-family: gothic;
+    color:white;
+    font-weight: bold;
+}
