@@ -49,6 +49,15 @@ text-decoration:none;
     height:42.34vw;
     position: relative;
     margin:2vw auto;
+    background: url(dizajnk.png) no-repeat;
+    background-size: 100% auto;
+}
+
+.sertifikatTemplateP{
+    width: 60vw;
+    height:42.34vw;
+    position: relative;
+    margin:2vw auto;
     background: url(dizajnp.png) no-repeat;
     background-size: 100% auto;
 }
@@ -90,14 +99,15 @@ text-decoration:none;
 
   .desc{
     width: 60vw;
-    height: 40vw;
+    height: auto;
     position: relative;
     margin:5vw auto;
     background-color: #3266cc;
     font-family: gothic;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color:white;
     padding: 2vw;
+    text-align: left;
   }
 
   
@@ -143,5 +153,8 @@ text-decoration:none;
     .desc{
         width:90vw;
         font-size: 3vw;
+    }
+    .downarr{
+        display: none;
     }
 }

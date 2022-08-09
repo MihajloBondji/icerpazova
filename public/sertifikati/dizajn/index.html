@@ -21,33 +21,112 @@
   <body>
 	<div class="main">
 
-		<div class="sertifikatTemplate shadow">
+		<div class="sertifikatTemplate shadow" id="sertifikatTemplate">
 			<img src="../../files/arr.svg" class="downarr" id="arr">
 			<div class="ime" id="ime"></div>
 			<div class="broj" id="broj"></div>
 		</div>
 
-		<div class="desc">
-			Ovaj sertifikat je validan i potvrđuje da je <span id="imeiprezime"></span> odslušao/la kurs osnova grafičkog dizajna koji obuhvata:
+		<div class="desc" id="desck">
+			Ovaj sertifikat je <b>validan</b> i potvrđuje da je <b><span id="imeiprezimek"></span></b> odslušao/la kurs osnova grafičkog dizajna koji obuhvata:
+			<br><br>
+			<b>KOMPLETAN KURS (Adobe Illustrator)</b>
+			<ol>
+			<li>Osnove</li>
+			<li>Rad sa objektima</li>
+			<li>Podešavanja objekata i dodatni alati</li>
+			<li>Crtanje i bojenje u Illustratoru</li>
+			<li>Dodatni alati za crtanje</li>
+			<li>Simetrično i koncentrično crtanje</li>
+			<li>Rad sa četkicama</li>
+			<li>Rad sa slikama i tracing</li>
+			<li>Rad sa tekstom</li>
+			<li>Napredne tehnike</li>
+			<li>Primer dizajna od početka do kraja</li>
+			<li>Kreiranje mock-upa uz pomoć PHOTOSHOP-a</li>
+			<li>Dodatni online izvori i saveti</li>
+			</ol>
+		</div>
+		
+		<div class="displnone" id="descp">
+			Ovaj sertifikat je <b>validan</b> i potvrđuje da je <b><span id="imeiprezimep"></span></b> odslušao/la kurs osnova grafičkog dizajna koji obuhvata:
+			<br><br>
+			<b>PRILAGODJEN KURS</b>
+			<br><br>
+			ADOBE PHOTOSHOP:
+			<ol>
+			<li>Zamena pozadine</li>
+			<li>Uklanjanje nepravilnosti</li>
+			<li>Dodavanje i blend elemenata</li>
+			</ol>
+			ADOBE ILLUSTRATOR:<br><br>
+			Upoznavanje sa radom u ovom programu kroz vežbu kreiranja pozivnice, gde se upoznaju sa:
+			<ol>
+			<li>Dodavanje pozadine</li>
+			<li>Dodavanje elemenata</li>
+			<li>Rad sa tekstom</li>
+			<li>Eksportovanje</li>
+			</ol>
+			CANVA:
+			<ol>
+			<li>Upoznavanje sa okruženjem kroz vežbu kreiranja vizitkarte i objašnjavanje svih funkcionalnosti koje CANVA nudi</li>
+			<li>Samostalni rad: kreiranje sertifikata</li>
+			</ol>
 		</div>
 		
 	</div>
 	<script>
 		var lista=[
 		"Neispravan link",
-		"Andrej Hrgovic"
+		"Anđela Mihajlović",
+		"Uglješa Lukešević",
+		"Jovan Babić",
+		"Iva Nikolić",
+		"Aleksa Mutvić",
+		"Milica Kikić",
+		"Jana Balaž",
+		"Uroš Todorović",
+		"Mirjana Šaš",
+		"Ivan Šipicki",
+		"Mihailo Vujičić",
+		"Sofija Vujičić",
+		"Smilja Rajšić",
+		"Mila Rajšić",
+		"Nina Rapajić",
+		"Danilo Vujović",
+		"Anja Jokić",
+		"Tadija Injac",
+		"Vanja Stojković",
+		"Matej Hrgović",
+		"Andrej Hrgović",
+		"Todor Vujičić",
+		"Andrej Horvat",
+		"Vukašin Inđić",
+		"Dorian Šaš",
+		"Vladimir Obućina",
+		"Konstantin Vuk Mijić",
+		"Damjan Božić",
+		"Dunja Božić"
 		];
 
 		var url = new URL(window.location.href);
 		var c = url.searchParams.get("n");
-		if(c==null)
+		if(c==null||c<=0||c>=30)
 		{
 			c=0;
-			//location.href="../404.html";
+			//location.href="../../404.html";
 		}
 		c=c-0;
+		let kp="k";
+		if(c>=10)
+		{
+			document.getElementById("desck").className="displnone";
+			document.getElementById("descp").className="desc";
+			document.getElementById("sertifikatTemplate").classList="sertifikatTemplateP shadow";
+			kp="p";
+		}
 		document.getElementById("ime").innerHTML=lista[c];
-		document.getElementById("imeiprezime").innerHTML=lista[c];
+		document.getElementById("imeiprezime"+kp).innerHTML=lista[c];
 		c+=200;
 		document.getElementById("broj").innerHTML=c+"/2022";
 		
