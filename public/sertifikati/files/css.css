@@ -140,14 +140,18 @@ text-decoration:none;
     .sertifikatTemplate{
         width:90vw;
         height: 63.51vw;
+    } 
+    .sertifikatTemplateP{
+        width:90vw;
+        height: 63.51vw;
     }
 
     .ime{
-        font-size: 4.4vw;
+        font-size: 6vw;
     }
 
     .broj{
-        font-size: 1.1vw;
+        font-size: 1.5vw;
     }
 
     .desc{
