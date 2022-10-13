@@ -102,7 +102,7 @@ function slideshow(x){
 
 var klik=function(){}
 
-function setpanorama(){
+function setpanorama(){/*
 	document.getElementById('sponsor1').classList.add("sponsoran");
 	setTimeout(function(){
 			document.getElementById('sponsor2').classList.add("sponsoran");
@@ -118,7 +118,7 @@ function setpanorama(){
 			},10000);
 	setTimeout(function(){
 			document.getElementById('sponsor6').classList.add("sponsoran");
-			},12500);
+			},12500);*/
 	completed=0;
 
 	pannellum.viewer('panorama', {   

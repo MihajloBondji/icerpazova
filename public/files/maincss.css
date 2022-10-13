@@ -374,48 +374,57 @@ a:hover{
 	padding:0;
 }
 
+.marquee{
+	position: absolute;
+	top:7vw;
+	left:0;
+	height:15vw;
+	width:100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.marquee:hover .sponsor {
+	animation-play-state: paused;
+  }
+
 .sponsor{
-	position:absolute;
-	top:13vw;
-	left:-10vw;
-	width:100vw;
+	position:relative;
+	display: inline-block;
 	max-height:10vw;
 	max-width:10vw;
+	left: -100%;
+	animation: marquee 10.4s linear infinite;
 }
 
-.sponsoran{
-	transform: translate(-50%, -50%);
-	animation:sponsorsanim linear infinite 15s;
-	animation-delay:0s;
+.sponsor:hover{
+	filter: saturate(2);
 }
 
-@-webkit-keyframes sponsorsanim{
-	0%{left:-40%;}
-	13.3%{left:10%;}
-	20%{left:10%;}
-	26.6%{left:40%;max-height:10vw;max-width:10vw;}
-	30%{left:50%;max-height:15vw;max-width:15vw;}
-	36.6%{left:50%;max-height:15vw;max-width:15vw;}
-	40%{left:60%;max-height:10vw;max-width:10vw;}
-	46.6%{left:90%;}
-	53.3%{left:90%;}
-	66.6%{left:140%;}
-	100%{left:140%;}
-}
+  .sponsor1{
+	animation-delay: 0s;
+  }
+  .sponsor2{
+	animation-delay: 1.2s;
+  }
+  .sponsor3{
+	animation-delay: 2.4s;
+  }
+  .sponsor4{
+	animation-delay: 3.6s;
+  }
+  .sponsor5{
+	animation-delay: 4.8s;
+  }
+  .sponsor6{
+	animation-delay: 6s;
+  }
 
-@keyframes sponsorsanim{
-	0%{left:-40%;}
-	13.3%{left:10%;}
-	20%{left:10%;}
-	26.6%{left:40%;max-height:10vw;max-width:10vw;}
-	30%{left:50%;max-height:15vw;max-width:15vw;}
-	36.6%{left:50%;max-height:15vw;max-width:15vw;}
-	40%{left:60%;max-height:10vw;max-width:10vw;}
-	46.6%{left:90%;}
-	53.3%{left:90%;}
-	66.6%{left:140%;}
-	100%{left:140%;}
-}
+  @keyframes marquee {
+	0%   { left: -100%; }
+	100% { left: 100%; }
+  }
+
 
 .partners{
 	font-family:montserrat;
