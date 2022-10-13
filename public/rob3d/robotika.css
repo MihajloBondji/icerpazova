@@ -1,0 +1,170 @@
+.categoryHolder{
+	position:relative;
+	margin:3vw;
+	width:94vw;
+	height:auto;
+	padding:0;
+}
+
+.categoryDiv{
+	position:relative;
+	float:left;
+	width:25vw;
+}
+
+.categoryDiv2{
+	position:relative;
+	float:left;
+	margin-left: 3vw;
+	margin-bottom:3vw;
+	width:66vw;
+	text-align: center;
+}
+
+.linksDiv{
+	position: relative;
+	float: left;
+	width:29%;
+	margin: 1.5%;
+	border: #3266cc 2px solid;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border-radius: 20px;
+	height: auto;
+	min-height: 25vw;
+	text-align: center;
+	padding: 2vw;
+}
+
+.obavestenje{
+	position: relative;
+	float: left;
+	width:97%;
+	margin: 0 1.5%;
+	border: #F08113 2px solid;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border-radius: 20px;
+	height: auto;
+	min-height: 5vw;
+	text-align: center;
+	padding: 2vw;
+	font-family: Gothic;
+	font-size: 1.5vw;
+	text-align:left;
+}
+
+.naslovMaterijali{
+	position: relative;
+	width: 100%;
+	margin: 0 0 2vw 0;
+	float: left;
+	font-size: 3vw;
+	color:#3266cc;
+	font-family: Gothic;
+	font-weight: bold;
+	text-align: center;
+}
+
+.linkIcon{
+	height: 5vw;
+}
+
+.linksTitle{
+	display: block;
+	color:#3266cc;
+	font-family: Gothic;
+	font-size: 2vw;
+	width:100%;
+	text-decoration: underline;
+}
+
+.linksText{
+	display: inline-block;
+	color: rgb(50, 50, 50);
+	font-family: Gothic;
+	font-size: 1vw;
+	width:100%;
+	margin-top: 1vw;
+	text-align: center;
+}
+
+.hoveringA:hover .linksDiv{
+	border-color: #F08113;
+	background-color: #f8f8f8;
+}
+.linksDiv:hover{
+	border-color: #F08113;
+}
+
+.hoveringA:hover .linksTitle{
+	color: #F08113;
+}
+
+.buttonTermin{
+	position: relative;
+	display: block;
+	width:80%;
+	margin: 1vw auto;
+	border-radius: 50px;
+	border:solid 2px #3266cc;
+	color:rgb(50, 50, 50);
+	font-weight: bold;
+	font-family: Gothic;
+	text-align: center;
+	cursor: pointer;
+}
+
+.buttonTermin:hover{
+	border-color:#F08113;
+}
+
+@media screen and (max-width:900px){
+	.categoryHolder{
+		flex-direction:column;
+		width:80vw;
+		margin:3vh auto;
+	}
+	
+	.categoryDiv{
+		width:100%;
+		margin:2vh 0;
+	}
+	.categoryDiv2{
+		width:100%;
+		margin:2vh 0;
+	}
+
+	.naslovMaterijali{
+		font-size: 4vh;
+	}
+
+	.linkIcon{
+		height: 4vh;
+	}
+
+	.linksDiv{
+		width:100%;
+		margin: 2vh 0;
+		padding: 6vh;
+	}
+
+	.linksText{
+		font-size: 2vh;
+	}
+
+	.obavestenje{
+		font-size: 2vh;
+	}
+
+	.linksTitle{
+		font-size: 4vh;
+	}
+
+	.linkIcon{
+		height: 10vh;
+	}
+
+}

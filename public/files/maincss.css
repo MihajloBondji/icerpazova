@@ -635,6 +635,10 @@ a:hover{
 	fill:white;
 }
 
+.curpointer{
+	cursor: pointer;
+}
+
 .socialsa{
 	width:auto;
 	margin:auto;
@@ -803,6 +807,21 @@ a:hover{
 
 .hoverunder:hover{
 	text-decoration:underline;
+}
+
+.akontakt{
+	text-decoration:underline;
+	color:white;
+}
+
+.akontakt:visited{
+	text-decoration:underline;
+	color:white;
+}
+
+.akontakt:hover{
+	text-decoration:underline;
+	color:antiquewhite;
 }
 
 @media screen and (max-width:900px){
