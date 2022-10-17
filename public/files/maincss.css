@@ -394,7 +394,7 @@ a:hover{
 	max-height:10vw;
 	max-width:10vw;
 	left: -100%;
-	animation: marquee 10.4s linear infinite;
+	animation: marquee 16s linear infinite;
 }
 
 .sponsor:hover{
@@ -405,19 +405,19 @@ a:hover{
 	animation-delay: 0s;
   }
   .sponsor2{
-	animation-delay: 1.2s;
+	animation-delay: 1.8s;
   }
   .sponsor3{
-	animation-delay: 2.4s;
-  }
-  .sponsor4{
 	animation-delay: 3.6s;
   }
+  .sponsor4{
+	animation-delay: 5.4s;
+  }
   .sponsor5{
-	animation-delay: 4.8s;
+	animation-delay: 7.2s;
   }
   .sponsor6{
-	animation-delay: 6s;
+	animation-delay: 9s;
   }
 
   @keyframes marquee {
