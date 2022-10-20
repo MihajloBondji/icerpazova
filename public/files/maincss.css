@@ -384,10 +384,6 @@ a:hover{
 	white-space: nowrap;
 }
 
-.marquee:hover .sponsor {
-	animation-play-state: paused;
-  }
-
 .sponsor{
 	position:relative;
 	display: inline-block;
