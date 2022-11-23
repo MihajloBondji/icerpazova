@@ -130,8 +130,7 @@ function setpanorama(){/*
     },
 
     "scenes": {
-        "prostor": {
-		"hfov": 150,"pitch": 0,"yaw": 179,'type': 'equirectangular','panorama': 'files/prostor.JPG','autoLoad':true,'compass':false,'autoRotate': -2,'hotSpots': [{'pitch':-15.25799,'yaw':-5.28,'type': 'info','text': 'Ulaz','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'Ulaz'}},{'pitch':-9.508599,'yaw':-144.48,'type': 'info','text': 'Pametna tabla','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'Pametna tabla'}},{'pitch':-9.066339,'yaw':123.84,'type': 'info','text': '3D i klasični štampači','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'3D i klasični štampači'}},{'pitch':-3.759214,'yaw':-3.84,'type': 'scene',"sceneId": "ulaz",'text': 'Izlaz na ulicu','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'Izlaz na ulicu'}}]}
+        "prostor": {'type': 'equirectangular','panorama': 'files/prostor.JPG','autoLoad':true,'autoRotate': -2,'hotSpots': [{'pitch':-7.297297,'yaw':0.48,'type': 'info','text': '3D štampači','clickHandlerFunc':function(){}},{'pitch':-0.2211302,'yaw':43.68,'type': 'info','text': 'Pametna tabla','clickHandlerFunc':function(){}},{'pitch':-23.66093,'yaw':-178.08,'type': 'info','text': 'Ulaz u konferencijsku salu','clickHandlerFunc':function(){}},{'pitch':5.970516,'yaw':-177.12,'type': 'info','text': 'Izlaz','clickHandlerFunc':function(){}}]}
 	,
 
         "ulaz": {
