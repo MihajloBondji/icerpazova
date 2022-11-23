@@ -128,9 +128,11 @@ function setpanorama(){/*
 		"mouseZoom":false,
 		"autoLoad":true
     },
-
+	
     "scenes": {
-        "prostor": {'type': 'equirectangular','panorama': 'files/prostor.JPG','autoLoad':true,'autoRotate': -2,'hotSpots': [{'pitch':-7.297297,'yaw':0.48,'type': 'info','text': '3D štampači','clickHandlerFunc':function(){}},{'pitch':-0.2211302,'yaw':43.68,'type': 'info','text': 'Pametna tabla','clickHandlerFunc':function(){}},{'pitch':-23.66093,'yaw':-178.08,'type': 'info','text': 'Ulaz u konferencijsku salu','clickHandlerFunc':function(){}},{'pitch':5.970516,'yaw':-177.12,'type': 'info','text': 'Izlaz','clickHandlerFunc':function(){}}]}
+        "prostor": {
+			"hfov": 150,'type': 'equirectangular','panorama': 'files/prostor.JPG','autoLoad':true,'autoRotate': -2,'hotSpots': [{'pitch':-7.297297,'yaw':0.48,'type': 'info','text': '3D štampači','clickHandlerFunc':function(){}},{'pitch':-0.2211302,'yaw':43.68,'type': 'info','text': 'Pametna tabla','clickHandlerFunc':function(){}},{'pitch':-23.66093,'yaw':-178.08,'type': 'info','text': 'Ulaz u konferencijsku salu','clickHandlerFunc':function(){}},{'pitch':5.970516,'yaw':-177.12,'type': 'scene',"sceneId": "ulaz",'text': 'Izlaz na ulicu','clickHandlerFunc':klik,'clickHandlerArgs':{target:'',text:'Izlaz na ulicu'}}]
+		}
 	,
 
         "ulaz": {
