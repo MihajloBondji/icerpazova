@@ -1,0 +1,118 @@
+<!--Created by Mihajlo Bondji http://mihajlobondji.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <title>ICER - Sertifikati</title>
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <link rel="shortcut icon" type="image/jpg" href="../../favicon.png"/>
+	  
+	  <link rel="stylesheet" href="../files/css.css" />
+	  <script>
+		
+	var scrollScript = function(){
+	var scr=window.scrollY;
+		if(scr>0)
+			document.getElementById("arr").className="displnone";
+		else document.getElementById("arr").className="downarr";
+	}
+	  </script>
+	  <style>
+		.sertifikatTemplate{
+    		background: url(../files/rob3d.png) no-repeat;
+			width: 60vw;
+			height:42.34vw;
+			position: relative;
+			margin:2vw auto;
+			background-size: 100% auto;
+		}
+	  </style>
+  </head>
+  <body>
+	<div class="main">
+
+		<div class="sertifikatTemplate shadow" id="sertifikatTemplate">
+			<img src="../../files/arr.svg" class="downarr" id="arr">
+			<div class="ime" id="ime"></div>
+			<div class="broj" id="broj"></div>
+		</div>
+
+		<div class="desc" id="desc">
+			Ovaj sertifikat je <b>validan</b> i potvrđuje da je <b><span id="imeiprezime"></span></b> odslušao/la kurs robotike i 3D štampe koji obuhvata:
+			<br><br>
+			<b>Robotika</b>
+			<ol>
+			<li>Osnove Arduino mikrokontrolera</li>
+			<li>Poznavanje osnovnih elektronskih komponenti</li>
+			<li>Rad sa komponentama iz arduino starter kit-a</li>
+			<li>Sklapanje jednostavnog robota</li>
+			</ol>
+			<b>3D štampa</b>
+			<ol>
+			<li>Rad sa 3D štampačima</li>
+			<li>Rad sa Autodesk Fusion360 programom</li>
+			<li>Pronalaženje 3D modela na internetu</li>
+			</ol>
+		</div>
+		
+	</div>
+	<script>
+		var lista=[
+		"Neispravan link",
+		"Aleksa Duić",
+		"Aleksa Đurić",
+		"Aleksa Vujaklija",
+		"Ana Ilić",
+		"Andrea Bubnjar",
+		"Andrea Đekić",
+		"Anja Crnobrnja",
+		"Anja Rusić",
+		"Damjan Zagorac",
+		"Daniel Vereš",
+		"Dušan Pajić",
+		"Filip Stanišić",
+		"Jovan Jovanović",
+		"Komnen Dragaš",
+		"Konstantin Ranđelović",
+		"Mario Očovaj",
+		"Maša Railić",
+		"Mateja Prelovac",
+		"Mihajlo Bulić",
+		"Mihajlo Kasapski",
+		"Mihajlo Pavković",
+		"Mihajlo Stanišić",
+		"Milan Tripković",
+		"Nemanja Vasović",
+		"Ognjen Dotlić",
+		"Ognjen Radulović",
+		"Slavko Milivojević",
+		"Stefan Bogovac",
+		"Stefan Kasagić",
+		"Tijana Jekić",
+		"Uroš Blažić",
+		"Viktor Ilić",
+		"Viktor Šušnjar",
+		"Viktorija Grubić",
+		"Vjera Gutić",
+		"Vuk Gvozdenac",
+		"Vuk Ulemek",
+		"Vukašin Mandić"
+		];
+
+		var url = new URL(window.location.href);
+		var c = url.searchParams.get("n");
+		if(c==null||c<=0||c>=39)
+		{
+			c=0;
+			//location.href="../../404.html";
+		}
+		c=c-0;
+		document.getElementById("ime").innerHTML=lista[c];
+		document.getElementById("imeiprezime").innerHTML=lista[c];
+		c+=300;
+		document.getElementById("broj").innerHTML=c+"/2022";
+		
+	window.addEventListener("scroll", scrollScript);
+	</script>
+  </body>
+ </html>
