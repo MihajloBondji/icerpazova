@@ -26,7 +26,7 @@
 	float: left;
 	width:29%;
 	margin: 1.5%;
-	border: #3266cc 2px solid;
+	border: #3266cc 4px solid;
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -41,7 +41,7 @@
 	position: relative;
 	float: left;
 	width:97%;
-	margin: 0 1.5%;
+	margin: 0 1.5% 3vw 1.5%;
 	border: #F08113 2px solid;
 	box-sizing: border-box;
     -moz-box-sizing: border-box;

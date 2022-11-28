@@ -640,6 +640,14 @@ a:hover{
 	fill:white;
 }
 
+.socialcontactt{
+	height:2vw;
+	cursor:pointer;
+	margin:1vw 0 -0.3vw 0;
+	transition:fill ease 0.2s;
+	fill:#3266cc;
+}
+
 .curpointer{
 	cursor: pointer;
 }
@@ -655,12 +663,32 @@ a:hover{
 	transition:color ease 0.2s;
 }
 
+.socialsaa{
+	width:auto;
+	margin:auto;
+	text-align:center;
+	position:relative;
+	color:#3266cc;
+	font-size:1.5vw;
+	font-family:montserrat;
+	transition:color ease 0.2s;
+}
+
 .socialsa:hover{
 	text-decoration:none;
 	color:#F08113;
 }
 
+.socialsaa:hover{
+	text-decoration:none;
+	color:#F08113;
+}
+
 .socialsa:hover .socialcontact{
+	fill:#F08113;
+}
+
+.socialsaa:hover .socialcontactt{
 	fill:#F08113;
 }
 
@@ -921,8 +949,16 @@ a:hover{
 	font-size:2.5vw;
 }
 
+.socialsaa{
+	font-size:2.5vw;
+}
+
 .socialcontact{
 	height:3vw;
+}
+
+.socialcontactt{
+	height:10vw;
 }
 
 .downarr{
