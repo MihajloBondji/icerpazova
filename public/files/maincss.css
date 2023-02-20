@@ -224,7 +224,7 @@ a:hover{
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	-webkit-transition: background-image 0.3s ease-in-out;
 	transition: background-image 0.3s ease-in-out;
 }
