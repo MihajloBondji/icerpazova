@@ -597,6 +597,23 @@ a:hover{
 	margin-top:9.5vw;
 }
 
+.arrslide2{
+	position:absolute;
+	width:auto;
+	height:auto;
+	font-size:6vw;
+	color:#fff;
+	text-shadow: 0 0 10px white;
+	cursor:pointer;
+	transition:font-size ease 0.2s,top ease 0.2s;
+	z-index:10;
+	top: 11vw;
+}
+
+.arrslide2:hover{
+	color:#c9dbff;
+}
+
 .slidepic{
 	position:relative;
 	float:left;
@@ -961,6 +978,85 @@ a:hover{
 	color:antiquewhite;
 }
 
+.slike{
+	width:100%;
+	position:relative;
+	float:left;
+	height:38vw;
+	overflow:hidden;
+	text-align: center;
+	display:flex;
+	flex-direction:row;
+	margin-top: 2vw;
+	border-bottom:solid 2vw #eee;
+}
+
+.marquee2{
+	position: absolute;
+	top:0;
+	left:0;
+	height:28vw;
+	width:100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+.marquee2::-webkit-scrollbar {
+	display: none;
+  }
+.marquee2 {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+  }
+
+.slikax {
+	width: auto;
+	height: 28vw;
+	margin-left: -7vw;
+  }
+
+  .galerijatext{
+	position: absolute;
+	top:29vw;
+	width:20vw;
+	height:2.5vw;
+	left:39.5vw;
+	padding: 1vw;
+	font-family: montserrat;
+	border-radius: 50px;
+	font-size: 2vw;
+	text-align: center;
+	color: white;
+	background-color: #3266cc;
+	text-decoration: none;
+	border:solid #3266cc 0.5vw;
+	cursor: pointer;
+	transition: ease 0.2s;;
+  }
+
+  .galerijatext:hover{
+	color: #3266cc;
+	background-color: white;
+	text-decoration: underline;
+  }
+
+  .bluegradient{
+	position: absolute;
+	height:28vw;
+	width:15vw;
+	top:0;
+	left:0;
+	background: linear-gradient(90deg, #3266cc, transparent);
+  }
+  .bluegradient2{
+	position: absolute;
+	right: 0;
+	height:28vw;
+	width:15vw;
+	top:0;
+	background: linear-gradient(270deg, #3266cc, transparent);
+  }
+
 @media screen and (max-width:900px){
 .triangle{
 	right:-155vh;
@@ -1058,6 +1154,13 @@ a:hover{
 	font-size:12vh;
 	margin-top:23%;
 }
+.arrslide2{
+	font-size:10vh;
+}
+
+.arrslide2:hover{
+	font-size:12vh;
+}
 
 .uclanisetekst{
 	font-size:4vw;
@@ -1132,5 +1235,34 @@ a:hover{
 
 .kontaktdiv{
 	height: 20vh;
+}
+
+.arrslide2{
+	display: none;
+}
+
+.slike{
+	height: 38vh;
+}
+
+.marquee2{
+	height: 28vh;
+}
+
+.slikax{
+	height: 28vh;
+	margin-left: -7vh;
+}
+
+.bluegradient, .bluegradient2{
+	display: none;
+}
+
+.galerijatext{
+	top:31vh;
+	height:2.5vh;
+	font-size: 2vh;
+	width: 70vw;
+	left:15vw;
 }
 }
