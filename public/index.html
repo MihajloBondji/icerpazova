@@ -30,10 +30,23 @@
 	<link rel="stylesheet" href="pannellum/pannellum.css"/>
 	<script src="pannellum/pannellum.js"></script>
 	<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11065114940"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11065114940'); </script>
+	<style>
+		.main{
+			top:0;
+		}
+
+		.home{
+			height:105vh;
+		}
+		.header{
+			background:rgba(50, 102, 204,0);
+		}
+	</style>
   </head>
   <body onload="setpanorama()" onresize="resizeFun()">
 	<div class="main">
 		<div class="home">
+			<div class="homeBackground" id="hmbckg"></div>
 			<div class="triangle2" id="triangle2"></div>
 			<div class="triangle" id="triangle"></div>
 			<div class="posttext">
@@ -184,6 +197,11 @@
 			</span>
 				
 			<span class="newline">
+				<a class="socialsa" href="mailto:office@icerpazova.com">
+					office@icerpazova.com
+				</a>
+			</span>
+			<span class="newline">
 				<a class="socialsa" href="mailto:icerpazova@gmail.com">
 					icerpazova@gmail.com
 				</a>
@@ -241,6 +259,17 @@
 		 if (!(document.getElementById('header').contains(e.target)))
 		checkmenu();
 });
+var currentBckg=1;
+var changer=setTimeout(bcchng,2500);
+
+function bcchng(){
+	switch(currentBckg){
+		case 1:document.getElementById("hmbckg").style.backgroundImage="url('files/background2.png')";currentBckg=2;break;
+		case 2:document.getElementById("hmbckg").style.backgroundImage="url('files/background1.png')";currentBckg=3;break;
+		case 3:document.getElementById("hmbckg").style.backgroundImage="url('files/background3.png')";currentBckg=1;break;
+	}
+	changer=setTimeout(bcchng,2500)
+}
 	</script>
   </body>
  </html>

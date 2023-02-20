@@ -208,21 +208,36 @@ a:hover{
 .home{
 	width:100%;
 	position:relative;
+	margin-top:0;
 	float:left;
 	height:95vh;
 	overflow:hidden;
 	background:rgba(50, 102, 204,1);
 }
-
+.homeBackground{
+	position:absolute;
+	width: 100%;
+	min-height: 105vh;
+	top:0;
+	left: 0;
+	background: url("background3.png");
+	background-size: 100% auto;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-transition: background-image 0.3s ease-in-out;
+	transition: background-image 0.3s ease-in-out;
+}
 .posttext{
 	width:40vw;
 	position:absolute;
-	top:14vw;
+	top:19vw;
 	left:5vw;
 	font-family:gothic,montserrat;
 	font-weight:bold;
 	font-size:2.5vw;
-	color:white;
+	color: white;
+    text-shadow: rgba(255,255,255,0.3) 0 5px 5px;
 }
 
 .postsubtext{
@@ -252,23 +267,23 @@ a:hover{
 .triangle{
 	position:absolute;
 	top:0;
-	right:-95vh;
-	width:0; 
-	height:0; 
-	border-left: 95vh solid transparent;
-	border-right: 95vh solid transparent;
-	border-bottom: 95vh solid #F08113;
-}
-
-.triangle2{
-	position:absolute;
-	top:-10vh;
 	right:-105vh;
 	width:0; 
 	height:0; 
 	border-left: 105vh solid transparent;
 	border-right: 105vh solid transparent;
-	border-bottom: 105vh solid #F6B676;
+	border-bottom: 105vh solid #F08113;
+}
+
+.triangle2{
+	position:absolute;
+	top:-10vh;
+	right:-115vh;
+	width:0; 
+	height:0; 
+	border-left: 115vh solid transparent;
+	border-right: 115vh solid transparent;
+	border-bottom: 115vh solid #F6B676;
 }
 
 
@@ -497,7 +512,7 @@ a:hover{
 .downarr{
 	position:absolute;
 	width:4vw;
-	top:75vh;
+	top:85vh;
 	left:48vw;
 	-webkit-animation:arrow 2s infinite;
 	animation:arrow 2s infinite;
@@ -558,14 +573,14 @@ a:hover{
 	right:-20%;
 }
 @-webkit-keyframes arrow {
-	0%{top:80vh;}
-	50%{top:85vh;}
-	100%{top:80vh;}
+	0%{top:90vh;}
+	50%{top:95vh;}
+	100%{top:90vh;}
 }
 @keyframes arrow {
-	0%{top:80vh;}
-	50%{top:85vh;}
-	100%{top:80vh;}
+	0%{top:90vh;}
+	50%{top:95vh;}
+	100%{top:90vh;}
 }
 
 .uclanisediv{
@@ -621,7 +636,7 @@ a:hover{
 	padding:1% 5%;
 	position:relative;
 	float:left;
-	height:auto;
+	height:20vw;
 	max-height:fit-content;
 	margin-top:0;
 	overflow:visible;
@@ -991,15 +1006,21 @@ a:hover{
 }
 
 @keyframes arrow {
-	0%{top:75vh;}
-	50%{top:80vh;}
-	100%{top:75vh;}
+	0%{top:85vh;}
+	50%{top:90vh;}
+	100%{top:85vh;}
 }
 
 @-webkit-keyframes arrow {
-	0%{top:75vh;}
-	50%{top:80vh;}
-	100%{top:75vh;}
+	0%{top:85vh;}
+	50%{top:90vh;}
+	100%{top:85vh;}
 }
 
+.homeBackground{
+	background-size: auto 100%;
+}
+.kontaktdiv{
+	height: 20vh;
+}
 }

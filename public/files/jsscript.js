@@ -1,5 +1,6 @@
 var menuop=0;
 function menu() {
+  document.getElementById("header").style.background="rgba(50, 102, 204,1)";
   burger.classList.toggle("change");
   linksHolder.classList.toggle("changeHolder");
   headLogo.classList.toggle("displayNone");
@@ -11,7 +12,7 @@ function menu() {
 
 function checkmenu(){
 	if(menuop==1)
-	menu();
+		menu();
 }
 
 var ab=0,ucl=0,bod=0,kur=0;
@@ -23,10 +24,17 @@ function resizeFun(){
 }
 var completed=0;
 var scrollScript = function(){
+	
+	if(window.scrollY>10){
+		document.getElementById("header").style.background="rgba(50, 102, 204,1)";
+	}
+	else{
+		document.getElementById("header").style.background="rgba(50, 102, 204,0)";
+	}
 	if(completed!=3)
 	{
-	resizeFun();
 	var scr=window.scrollY*0.85+window.innerHeight;
+	resizeFun();
 	// console.log(scr,kur);
 	if(completed<1)
 	if(scr>ab)
@@ -101,6 +109,8 @@ function slideshow(x){
 }
 
 var klik=function(){}
+
+
 
 function setpanorama(){/*
 	document.getElementById('sponsor1').classList.add("sponsoran");
