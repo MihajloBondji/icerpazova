@@ -231,7 +231,7 @@ a:hover{
 .posttext{
 	width:40vw;
 	position:absolute;
-	top:19vw;
+	top:29vw;
 	left:5vw;
 	font-family:gothic,montserrat;
 	font-weight:bold;
@@ -874,11 +874,11 @@ a:hover{
 
 @media screen and (max-width:900px){
 .triangle{
-	right:-135vh;
+	right:-155vh;
 }
 
 .triangle2{
-	right:-145vh;
+	right:-165vh;
 }
 
 .posttext{
