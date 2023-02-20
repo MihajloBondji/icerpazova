@@ -231,7 +231,7 @@ a:hover{
 .posttext{
 	width:40vw;
 	position:absolute;
-	top:29vw;
+	top:19vw;
 	left:5vw;
 	font-family:gothic,montserrat;
 	font-weight:bold;
@@ -883,6 +883,7 @@ a:hover{
 
 .posttext{
 	font-size:7vw;
+	top:29vw;
 	width:70vw;
 }
 
