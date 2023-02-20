@@ -221,7 +221,7 @@ a:hover{
 	top:0;
 	left: 0;
 	background: url("background3.png");
-	background-size: 100% auto;
+	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -1130,9 +1130,6 @@ a:hover{
 	100%{top:85vh;}
 }
 
-.homeBackground{
-	background-size: auto 100%;
-}
 .kontaktdiv{
 	height: 20vh;
 }
