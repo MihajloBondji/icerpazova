@@ -21,6 +21,7 @@ function resizeFun(){
 	ab=aboutus.getBoundingClientRect().top*1.5-bod.top;
 	kur=table1.getBoundingClientRect().top*0.9-bod.top;
 	ucl=uclanise.getBoundingClientRect().top-bod.top;
+	gal=galerija.getBoundingClientRect().top-bod.top;
 }
 var completed=0;
 var scrollScript = function(){
@@ -31,7 +32,7 @@ var scrollScript = function(){
 	else{
 		document.getElementById("header").style.background="rgba(50, 102, 204,0)";
 	}
-	if(completed!=3)
+	if(completed!=4)
 	{
 	var scr=window.scrollY*0.85+window.innerHeight;
 	resizeFun();
@@ -91,6 +92,15 @@ var scrollScript = function(){
 			document.getElementById('framebottom').className="framebottom";
 			document.getElementById('frameleft').className="frameleft";
 			completed=3;
+		}
+		if(completed<4)
+		if(scr>gal)
+		{
+			document.getElementById('scrollmarquee').style.display="block";
+			setTimeout(function(){
+			document.getElementById('scrollmarquee').style.left="0";
+			},100);
+			completed=4;
 		}
 	}
 }

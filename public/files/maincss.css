@@ -994,12 +994,12 @@ a:hover{
 .marquee2{
 	position: absolute;
 	top:0;
-	left:0;
 	height:28vw;
 	width:100%;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
+	transition: left ease-out 0.5s;
 }
 .marquee2::-webkit-scrollbar {
 	display: none;
