@@ -1,22 +1,27 @@
 		@font-face {
 			font-family: oswald;
 			src: url("../fonts/oswald.woff") format('woff'),url("../fonts/oswald.ttf") format('ttf');
+			font-display: swap;
 		}
 		@font-face {
 			font-family: poppins;
 			src: url("../fonts/poppins.woff") format('woff'),url("../fonts/poppins.ttf") format('ttf');
+			font-display: swap;
 		}
 		@font-face {
 			font-family: comfortaa;
 			src: url("../fonts/comfortaa.woff") format('woff'),url("../fonts/comfortaa.ttf") format('ttf');
+			font-display: swap;
 		}
 		@font-face {
 			font-family: montserrat;
 			src: url("../fonts/montserrat.woff") format('woff'),url("../fonts/montserrat.ttf") format('ttf');
+			font-display: swap;
 		}
 		@font-face {
 			font-family: gothic;
 			src: url("../fonts/gothic.woff") format('woff'),url("../fonts/gothic.TTF") format('ttf');
+			font-display: swap;
 		}
 ::-webkit-scrollbar {
 	width: 10px;
