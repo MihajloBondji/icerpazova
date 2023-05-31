@@ -1,22 +1,22 @@
 		@font-face {
 			font-family: oswald;
-			src: url("../fonts/oswald.ttf");
+			src: url("../fonts/oswald.woff") format('woff'),url("../fonts/oswald.ttf") format('ttf');
 		}
 		@font-face {
 			font-family: poppins;
-			src: url("../fonts/poppins.ttf");
+			src: url("../fonts/poppins.woff") format('woff'),url("../fonts/poppins.ttf") format('ttf');
 		}
 		@font-face {
 			font-family: comfortaa;
-			src: url("../fonts/comfortaa.ttf");
+			src: url("../fonts/comfortaa.woff") format('woff'),url("../fonts/comfortaa.ttf") format('ttf');
 		}
 		@font-face {
 			font-family: montserrat;
-			src: url("../fonts/montserrat.ttf");
+			src: url("../fonts/montserrat.woff") format('woff'),url("../fonts/montserrat.ttf") format('ttf');
 		}
 		@font-face {
 			font-family: gothic;
-			src: url("../fonts/gothic.TTF");
+			src: url("../fonts/gothic.woff") format('woff'),url("../fonts/gothic.TTF") format('ttf');
 		}
 ::-webkit-scrollbar {
 	width: 10px;
@@ -220,7 +220,7 @@ a:hover{
 	min-height: 105vh;
 	top:0;
 	left: 0;
-	background: url("background3.png");
+	background: url("background3.jpeg");
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;

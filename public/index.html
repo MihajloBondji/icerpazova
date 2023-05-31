@@ -45,9 +45,9 @@
   </head>
   <body onload="setpanorama()" onresize="resizeFun()">
 	<script>
-		new Image().src ="files/background1.png";
-		new Image().src ="files/background2.png";
-		new Image().src ="files/background3.png";
+		new Image().src ="files/background1.jpeg";
+		new Image().src ="files/background2.jpeg";
+		new Image().src ="files/background3.jpeg";
 	</script>
 	<div class="main">
 		<div class="home">
@@ -106,7 +106,7 @@
 					<div class="arrslide" onclick="slideshow(0)">&#9665;</div>
 					<div class="slidepic">
 						<a href="novikurs/index.html"><img src="files/tvojaideja.png" class="secondarypic1" id="slideop1"></a>
-						<a href="https://forms.gle/E9DxmGrHRNNkmupu9" target="_blank"><img src="files/priprema.png" class="slidemainpic" id="slideop2"></a>
+						<a href="web/index.html"><img src="files/WEBslika.jpg" class="slidemainpic" id="slideop2"></a>
 						<a href="novikurs/index.html"><img src="files/uskorokursevi.png" class="secondarypic2" id="slideop3"></a>
 					</div>
 					<div class="arrslide" onclick="slideshow(1)">&#9655;</div>
@@ -196,7 +196,7 @@
 			<a href="http://voxellab.rs/" target="_blank"><img src="files/voxellab.png" class="sponsor sponsor6"></a>
 			<a href="https://www.facebook.com/profile.php?id=100068936268404" target="_blank"><img src="files/mzlogo.png" class="sponsor sponsor5"></a>
 			<a href="http://apv.visokoobrazovanje.vojvodina.gov.rs/" target="_blank"><img src="files/sekretarijat.png" class="sponsor sponsor4"></a>
-			<a href="https://fondacijapazova.rs/" target="_blank"><img src="files/lfsp.png" class="sponsor sponsor3"></a>
+			<a href="https://fondacijapazova.rs/" target="_blank"><img src="files/lfsp.jpeg" class="sponsor sponsor3"></a>
 			<a href="http://inosrem.rs/" target="_blank"><img src="files/icsp.png" class="sponsor sponsor2"></a>
 			<a href="https://starapazova.rs/" target="_blank"><img src="files/opstina.png" class="sponsor sponsor1"></a>
 			</div>
@@ -301,9 +301,9 @@ var changer=setTimeout(bcchng,2500);
 
 function bcchng(){
 	switch(currentBckg){
-		case 1:document.getElementById("hmbckg").style.backgroundImage="url('files/background2.png')";currentBckg=2;break;
-		case 2:document.getElementById("hmbckg").style.backgroundImage="url('files/background1.png')";currentBckg=3;break;
-		case 3:document.getElementById("hmbckg").style.backgroundImage="url('files/background3.png')";currentBckg=1;break;
+		case 1:document.getElementById("hmbckg").style.backgroundImage="url('files/background2.jpeg')";currentBckg=2;break;
+		case 2:document.getElementById("hmbckg").style.backgroundImage="url('files/background1.jpeg')";currentBckg=3;break;
+		case 3:document.getElementById("hmbckg").style.backgroundImage="url('files/background3.jpeg')";currentBckg=1;break;
 	}
 	changer=setTimeout(bcchng,2500)
 }
