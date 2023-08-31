@@ -1,0 +1,70 @@
+/*
+    Ispod se pišu klase koje važe za celu stranicu.
+*/
+
+body{
+    margin: 0;
+}
+
+.asocijacije{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kolone{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+input[type=text]{
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+input[type=text]:hover{
+    background: rgb(173, 216, 230,0.2);
+    border: solid lightblue 1px;
+}
+
+.ad input:nth-child(2){
+    margin-left: 20px;
+}
+.ad input:nth-child(3){
+    margin-left: 40px;
+}
+.ad input:nth-child(4){
+    margin-left: 60px;
+}
+.ad input:nth-child(5){
+    margin-left: 80px;
+}
+
+.cb input:nth-child(5){
+    margin-left: 0px;
+}
+.cb input:nth-child(4){
+    margin-left: 20px;
+}
+.cb input:nth-child(3){
+    margin-left: 40px;
+}
+.cb input:nth-child(2){
+    margin-left: 60px;
+}
+.cb input:nth-child(1){
+    margin-left: 80px;
+}
+
+/*
+    Ispod se pišu klase koje važe za stranicu do maksimalne širine navedene u zagradama ( max-width: __px ).
+*/
+@media screen and ( max-width: 1000px ){
+
+}

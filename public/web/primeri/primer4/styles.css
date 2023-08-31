@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+.linija{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top:100px;
+    left:-100%;
+    background: orange;
+    animation: animacijaLinije 4s linear infinite;
+}
+
+@keyframes animacijaLinije {
+    0%{left:-100%;background: orange;}
+    50%{left:0%;background: red;}
+    100%{left:-100%;background: orange;}
+}
+
+.test{
+    width: 400px;
+    height: 600px;
+    border-radius: 50px;
+    background: red;
+    margin: 300px 100px;
+    padding: 20px;
+    animation: borderAnimacija 2s ease forwards;
+    transition: background 1s ease;
+    cursor:pointer;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+}
+
+.test:hover{
+    background: blue;
+}
+
+.test:active{
+    background: green;
+}
+
+@keyframes borderAnimacija {
+    from{border:0px solid orange;}
+    to{border:10px solid orange;}
+}

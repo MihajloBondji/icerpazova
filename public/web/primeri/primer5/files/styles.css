@@ -1,0 +1,357 @@
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+div{
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #f4be6d; 
+  }
+   
+::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 10px;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #ab8143; 
+  }
+
+.nav{
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background: #f4be6d;
+    transition: background 0.2s ease;
+    z-index: 10;
+}
+
+.nav:hover{
+    background: #f3c887;
+}
+
+.cup{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.cup:hover{
+    fill:rgb(162, 104, 17);
+}
+
+
+.menu{
+    position: relative;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.menuLink{
+    color:#333;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    transition: ease 0.2s;
+}
+
+.menuLink:hover{
+    color:rgb(162, 104, 17);
+    text-shadow: 2px 2px 4px rgb(255, 255, 255,0.2);
+    text-decoration: underline;
+}
+
+.home{
+    position: relative;
+    float: left;
+    margin-top: 60px;
+    width: 100%;
+    height: 80vh;
+    background:linear-gradient(30deg,rgba(244, 190, 109,0.7),rgba(244, 190, 109,0.3));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+}
+
+.coffee{
+    position: relative;
+    width: 30%;
+}
+
+.homeText{
+    position: relative;
+    font-weight: bold;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 3em;
+    color:#333;
+}
+
+.homeText span{
+    font-size: 0;
+    animation: fontSize 1s ease forwards;
+}
+
+@keyframes fontSize {
+    from{font-size: 0px;}
+    to{font-size: 80px;}
+}
+
+.about{
+    position: relative;
+    float: left;
+    width: 100%;
+    background: rgb(255, 244, 222);
+}
+
+.title{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color:#333;
+}
+
+.aboutLine{
+    position: relative;
+    float: left;
+    width: 75%;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+    padding: 25px;
+    color: #333;
+}
+
+.aboutLine:nth-child(odd){
+    float: right;
+}
+
+.linija{
+    width: 0;
+    margin-top: 20px;
+    height: 4px;
+    background: linear-gradient(90deg,rgba(162, 104, 17,1),rgba(162, 104, 17,0));
+    animation: linija 3s linear infinite alternate;
+}
+
+@keyframes linija {
+    from{width: 0;}
+    to{width: 100%;}
+}
+
+.products{
+    position: relative;
+    float: left;
+    width: 100%;
+    background: repeating-linear-gradient(45deg,white 0px,white 40px,#f4be6d 40px,#f4be6d 42px);
+}
+
+.products span{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+}
+
+.product{
+    width: 25%;
+    height: 80%;
+    border-radius: 30px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(244, 190, 109,0.5);
+    -moz-box-shadow: 0px 10px 30px 0px rgba(244, 190, 109,0.5);
+    box-shadow: 0px 10px 30px 0px rgba(244, 190, 109,0.5);
+}
+
+.product img{
+    height: 15vh;
+}
+
+.services{
+    position: relative;
+    float: left;
+    width: 100%;
+    background: #fff4de;
+}
+
+.services marquee{
+    height: auto;
+    width: 100%;
+    margin:50px 0;
+    font-size: 40px;
+    color:#333;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contact{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+}
+
+.contact div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; 
+  height: 200px;
+}
+
+.contact div a{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+}
+
+.contact div a:hover{
+    color:#f4be6d;
+    text-decoration: underline;
+}
+
+.cup2{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.cup2:hover{
+    fill:#f4be6d;
+}
+
+/*Ovo mi je za tablete*/
+@media screen and (max-width: 1000px) {
+    .home{
+        flex-direction: column;
+    }
+
+    .coffee{
+        width: 70%;
+    }
+
+    @keyframes fontSize {
+        from{font-size: 0px;}
+        to{font-size: 100px;}
+    }
+}
+
+/*Ovo mi je za telefone*/
+@media screen and (max-width: 700px) {
+    .nav{
+        flex-direction: column;
+        height: 60px;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuLink{
+        font-size:2em;
+        margin: 10px 0;
+    }
+
+    .cup{
+        width: 100px;
+        height: 100px;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+    .coffee{
+        width: 70%;
+    }
+
+    @keyframes fontSize {
+        from{font-size: 0px;}
+        to{font-size: 100px;}
+    }
+
+    .homeText{
+        margin-top: 20px;
+    }
+
+    .aboutLine{
+        width: 90%;
+        font-size: 45px;
+    }
+
+    .aboutLine:nth-child(odd){
+        float: left;
+    }
+
+    .linija{
+        height: 8px;
+    }
+
+    .products span{
+        flex-direction: column;
+    }
+
+    .product{
+        width: 90%;
+        height: 25%;
+    }
+
+    .products span{
+        height: 120vh;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .contact div a{
+        font-size: 2em;
+    }
+
+    .mapa{
+        width: 400px;
+        height: 400px;
+        margin: 0 !important;
+    }
+}

@@ -1,0 +1,40 @@
+<!--
+Ovo je osnovna struktura jedne HTML stranice koja ima tri eksterna fajla:
+    styles.css - za stilove napisane u CSS-u;
+    script.js - za JavaScript kod;
+    favicon.ico - ikonica koja se prikazuje u kartici pretraživača.
+    Takođe, u <head> delu se nalazi i <meta> tag koji nam omogućava da pravimo responzivne stranice, odnosno za uređaje različitih širina ekrana.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meni & onmousein/out</title>
+        <link rel="stylesheet" href="files/styles.css">
+        <script src="files/script.js"></script>
+        <link rel="icon" type="image/x-icon" href="files/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8">
+    </head>
+    <body onload="dodajDivove()">
+        <div class="menu">
+            <img src="files/m.svg" class="burger" id="burger" onclick="menu()">
+            <span id="zaLinkove" class="displayNone">
+                link1
+                <br>
+                link2
+                <br>
+                link3
+                <br>
+                link4
+                <br>
+                link5
+                <br>
+                link6
+            </span>
+        </div>
+        <div class='test2' onmouseover='this.style.borderRadius="150px"' onmouseout='this.style.borderRadius="0px"'></div>
+        <div class='test2' onmouseover='this.style.borderRadius="150px"' onmouseout='this.style.borderRadius="0px"'></div>
+        <div class='test2' onmouseover='this.style.borderRadius="150px"' onmouseout='this.style.borderRadius="0px"'></div>
+        <div class='test2' onmouseover='this.style.borderRadius="150px"' onmouseout='this.style.borderRadius="0px"'></div>
+    </body>
+</html>

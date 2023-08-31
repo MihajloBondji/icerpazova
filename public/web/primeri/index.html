@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ICER WEB - Primeri</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8">
+    
+        <style>
+            body{
+                background: linear-gradient(135deg,rgba(50, 102, 204,1),rgba(50, 102, 204,0.7));
+                min-height: 100vh;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            
+            .title{
+                font-size: 3vw;
+                text-align: center;
+                color:white;
+                font-weight: bold;
+                padding: 20px;
+                text-shadow: 3px 3px 5px rgba(255,255,255,0.2);
+            }
+
+            .cards{
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: stretch;
+                flex-wrap: wrap;
+            }
+
+            .card{
+                width:28%;
+                height: auto;
+                font-size: 1.5vw;
+                border: solid 5px white;
+                border-radius: 20px;
+                padding: 10px;
+                margin: 10px;
+                color: white;
+                text-align: center;
+                cursor: pointer;
+                transition: ease 0.1s;
+                background: #F08113;
+            }
+
+            .card:hover{
+                opacity: 0.8;
+            }
+
+            .cardmini{
+                height: auto;
+                font-size: 1.5vw;
+                border: solid 5px white;
+                border-radius: 20px;
+                padding: 10px;
+                margin: 10px;
+                color: white;
+                text-align: center;
+                cursor: pointer;
+                transition: ease 0.1s;
+                background: #F08113;
+                width: 15%;
+            }
+
+            @media screen and (max-width: 700px) {
+
+                .title{
+                    font-size: 4vh;
+                }
+
+
+                .card{
+                    width: 90%;
+                    font-size: 3vh;
+                }
+
+                .cardmini{
+                    width: 35%;
+                }
+            }
+        </style>
+
+        <script>
+            function postavi(){
+                let niz=document.getElementsByClassName("card");
+                let niz2=document.getElementsByClassName("cardmini");
+
+                for(let i=0;i<niz.length;i++)
+                {
+                    let r=128+Math.floor(Math.random()*128);
+                    let g=128+Math.floor(Math.random()*128);
+                    let b=128+Math.floor(Math.random()*128);
+                    console.log("rgb("+r+","+g+","+b+")")
+                    niz[i].style.borderColor="rgb("+r+","+g+","+b+")";
+                    niz[i].style.boxShadow="3px 3px 10px 10px rgba("+r+","+g+","+b+",0.5)";
+                    niz2[i].style.borderColor="rgb("+r+","+g+","+b+")";
+                    niz2[i].style.boxShadow="3px 3px 10px 10px rgba("+r+","+g+","+b+",0.5)";
+                }
+            }
+        </script>
+        
+    </head>
+    <body onload="postavi()">
+        <div class="title">
+            Primeri sa časova iz kursa WEB dizajn / WEB programiranje / WEB development
+        </div>
+        <div class="cards">
+            <div class="card" onclick="window.open('template/index.html')">
+                <b>Template</b>
+                <br><br>
+                Prazan projekat koji sadrži:
+                <ol style="text-align: left;">
+                    <li><b>index.html</b> za pisanje glavne HTML stranice</li>
+                    <li>files folder u kome se nalaze ostali fajlovi</li>
+                </ol>
+            </div>
+            <div class="card" onclick="window.open('primer1/index.html')">
+                <b>Primer1</b>
+                <br><br>
+                U ovom primeru se nalazi jedna HTML stranica sa osnovnim tag-ovima i stilovima definisanim u style-u u okviru samog elementa.
+            </div>
+            <div class="card" onclick="window.open('primer2/index.html')">
+                <b>Primer2</b>
+                <br><br>
+                Ovde možete videti primer jedne <b>forme</b> sa različitim tipovima polja.
+            </div>
+            <div class="card" onclick="window.open('primer3/index.html')">
+                <b>Primer3</b>
+                <br><br>
+                Primer jedne jednostavne stranice sa menijem i sekcijama, stilovi su pisani u eksternom CSS fajlu. 
+            </div>
+            <div class="card" onclick="window.open('primer4/index.html')">
+                <b>Primer4</b>
+                <br><br>
+                Primer animacije i tranzicije na elementima.
+            </div>
+            <div class="card" onclick="window.open('primer5/index.html')">
+                <b>Primer5</b>
+                <br><br>
+                Primer responzivne stranice i dodatnih stilova u CSS-u. Stranica menja izgled u odnosu na širinu ekrana i ima 3 stanja.
+            </div>
+            <div class="card" onclick="window.open('primer6/index.html')">
+                <b>Primer6</b>
+                <br><br>
+                Primer sa JavaScript-om, rad sa poljima, nizovima, ispis clanova, sabiranje, suma svih, sortiranje i dr.
+            </div>
+            <div class="card" onclick="window.open('primer7/index.html')">
+                <b>Primer7</b>
+                <br><br>
+                Primer menija sa dugmetom (burger menu), primer onmouseover i onmouseout sa dodavanjem div-ova direktno u HTML-u i korišćenjem JavaScript-a.
+            </div>
+            <div class="card" onclick="window.open('primer8/index.html')">
+                <b>Primer8</b>
+                <br><br>
+                Primer sa pomeranjem div-ova i dugmetom za reset.
+            </div>
+            <div class="card" onclick="window.open('primer9/index.html')">
+                <b>Primer9</b>
+                <br><br>
+                Primer sa input type="range", promenom pozadine i sa promenom vrednosti na slučajne brojeve. Pokazana su dva primera dobijanja nasumičnih vrednosti.
+            </div>
+            <div class="card" onclick="window.open('asocijacije/index.html')">
+                <b>Asocijacije</b>
+                <br><br>
+                Primer implementacije igre asocijacije za jednog igrača, odrađene korišćenjem HTML, CSS i JavaScript jezika.
+            </div>
+
+        </div>
+
+        <div class="title">
+            Preuzmite primere
+        </div>
+
+        <div class="cards">
+            <div class="cardmini" onclick="window.open('files/template.zip')">
+                template.zip
+            </div>
+            <div class="cardmini" onclick="window.open('files/primer1.zip')">
+                Primer1.zip
+            </div>
+            <div class="cardmini" onclick="window.open('files/primer2.zip')">
+                Primer2.zip
+            </div>
+            <div class="cardmini" onclick="window.open('files/primer3.zip')">
+                Primer3.zip
+            </div>
+            <div class="cardmini" onclick="window.open('files/primer4.zip')">
+                Primer4.zip
+            </div>
+            <div class="cardmini" onclick="window.open('files/primer5.zip')">
+                Primer5.zip
+            </div>
+            <div class="cardmini" onclick="window.open('files/primer6.zip')">
+                Primer6.zip
+            </div>
+            <div class="cardmini" onclick="window.open('files/primer7.zip')">
+                Primer7.zip
+            </div>
+            <div class="cardmini" onclick="window.open('files/primer8.zip')">
+                Primer8.zip
+            </div>
+            <div class="cardmini" onclick="window.open('files/primer9.zip')">
+                Primer9.zip
+            </div>
+            <div class="cardmini" onclick="window.open('files/asocijacije.zip')">
+                asocijacije.zip
+            </div>
+        </div>
+    </body>
+</html>

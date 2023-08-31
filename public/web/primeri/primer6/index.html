@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+
+        <script>
+            function dodaj(x){
+                document.getElementById("display").value+=x;
+            }
+
+            function obrisi(){
+                display.value="";
+            }
+
+            function saberi(){
+                let a=document.getElementById("prviBroj").value-0; //stavljamo -0 da bismo tekst pretvorili u broj
+                let b=document.getElementById("drugiBroj").value-0;
+                let c=a+b;
+                document.getElementById("zbir").value=c;
+            }
+
+            var niz=[74,32,78,2,89,45,1,34];
+
+            niz.push(90);
+            niz.push(10);
+
+            niz.pop(); //izbacujemo poslednji dodat, odnosno 10
+
+
+            var nizString=["Ljubisa","Zika","Ana","Marija","Nikola","Anja"];
+
+            function load(){
+                document.getElementById("zaNiz").innerHTML=niz;
+                document.getElementById("zaNizString").innerHTML=nizString;
+            }
+
+            function saberiNiz(){
+                let i=document.getElementById("prviIndeks").value-0; //stavljamo -0 da bismo tekst pretvorili u broj
+                let j=document.getElementById("drugiIndeks").value-0;
+                document.getElementById("zbirNiz").value=niz[i]+niz[j];
+            }
+
+            function sortirajNiz(){
+                document.getElementById("zaNizString").innerHTML=nizString.sort();
+            }
+
+            function sortNiz(){
+                let sortiranNiz=[...niz];
+                for(let i=0;i<sortiranNiz.length-1;i++)
+                    {
+                        for(let j=i+1;j<sortiranNiz.length;j++)
+                        {
+                            if(sortiranNiz[j]<sortiranNiz[i])
+                            {
+                                let temp=sortiranNiz[i];
+                                sortiranNiz[i]=sortiranNiz[j];
+                                sortiranNiz[j]=temp;
+                            }
+                        }
+                    }
+                return sortiranNiz;
+            }
+
+            function sumAll(){
+                let s=0;
+
+                for(let i=0;i<niz.length;i++)
+                    s+=niz[i];
+
+                //Drugi nacin
+                
+                //    for(let clan of niz)
+                //        s+=clan;
+                
+                document.getElementById("suma").value=s;
+            }
+        </script>
+    </head>
+    <body style="text-align: center;" onload="load()">
+        <input type="tekst" id="display">
+        <br><br>
+        <input type="button" value="7" id="d7" onclick="dodaj(this.value)">
+        <input type="button" value="8" id="d8" onclick="dodaj(this.value)">
+        <input type="button" value="9" id="d9" onclick="dodaj(this.value)">
+        <br>
+        <input type="button" value="4" id="d4" onclick="dodaj(this.value)">
+        <input type="button" value="5" id="d5" onclick="dodaj(this.value)">
+        <input type="button" value="6" id="d6" onclick="dodaj(this.value)">
+        <br>
+        <input type="button" value="1" id="d1" onclick="dodaj(this.value)">
+        <input type="button" value="2" id="d2" onclick="dodaj(this.value)">
+        <input type="button" value="3" id="d3" onclick="dodaj(this.value)">
+        <br>
+        <input type="button" value="0" id="d0" onclick="dodaj(this.value)">
+        <br>
+        <input type="button" value="Obrisi" id="clear" onclick="obrisi()">
+
+        <hr>
+
+        <br>
+        <input type="text" id="prviBroj"> + <input type="text" id="drugiBroj"> = <input type="text" id="zbir">
+        <br>
+        <input type="button" onclick="saberi()" value="Saberi">
+        <br>
+
+        <hr>
+
+        <br>
+        Niz: <span id="zaNiz"></span>
+        <br>
+        <input type="number" id="prviIndeks" placeholder="Indeks prvog clana"> + <input type="number" id="drugiIndeks" placeholder="Indeks drugog clana"> = <input type="text" id="zbirNiz">
+        <br>
+        <input type="button" onclick="saberiNiz()" value="Saberi dva clana iz niza">
+        <br><br>
+        <input type="button" onclick="alert(sortNiz())" value="Ispisi sortiran niz">
+        <br><br>
+
+        Suma svih clanova niza je: 
+        <input type="number" id="suma">
+        <input type="button" onclick="sumAll()" value="Izracunaj">
+
+        <br>
+
+        <hr>
+
+        <br>
+        Niz stringova: <span id="zaNizString"></span> <br>
+        <input type="button" onclick="sortirajNiz()" value="Sortiraj niz">
+        <br>
+        <hr>
+    </body>
+</html>

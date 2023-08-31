@@ -1,0 +1,33 @@
+<!--
+Ovo je osnovna struktura jedne HTML stranice koja ima tri eksterna fajla:
+    styles.css - za stilove napisane u CSS-u;
+    script.js - za JavaScript kod;
+    favicon.ico - ikonica koja se prikazuje u kartici pretraživača.
+    Takođe, u <head> delu se nalazi i <meta> tag koji nam omogućava da pravimo responzivne stranice, odnosno za uređaje različitih širina ekrana.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input range i random</title>
+        <link rel="stylesheet" href="files/styles.css">
+        <script src="files/script.js"></script>
+        <link rel="icon" type="image/x-icon" href="files/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8">
+    </head>
+    <body onload="promena()">
+        Red: 0 <input type="range" oninput="promena()" min="0" max="255" id="r"> 255
+        <br>
+        Green: 0 <input type="range" oninput="promena()" min="0" max="255" id="g"> 255
+        <br>
+        Blue: 0 <input type="range" oninput="promena()" min="0" max="255" id="b"> 255
+        <br>
+        <div id="zaVrednost"></div>
+        <br>
+        <input type="button" value="Postavi nasumične vrednosti svima" onclick="nasumicno()">
+        <br>
+        <input type="button" value="Random R" onclick="nasumicno2('r')">
+        <input type="button" value="Random G" onclick="nasumicno2('g')">
+        <input type="button" value="Random B" onclick="nasumicno2('b')">
+    </body>
+</html>
