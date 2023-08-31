@@ -7,28 +7,45 @@
         <meta charset="UTF-8">
     
         <style>
+
+		@font-face {
+			font-family: montserrat;
+			src: url("../../fonts/montserrat.woff") format('woff'),url("../fonts/montserrat.ttf") format('ttf');
+			font-display: swap;
+		}
+		@font-face {
+			font-family: gothic;
+			src: url("../../fonts/gothic.woff") format('woff'),url("../fonts/gothic.TTF") format('ttf');
+			font-display: swap;
+		}
             body{
-                background: linear-gradient(135deg,rgba(50, 102, 204,1),rgba(50, 102, 204,0.7));
+                background: repeating-linear-gradient(45deg,white 0px,white 50px,#c4f0ff 50px,#c4f0ff 52px,white 52px,white 100px,#ffcd9b 100px, #ffcd9b 102px);
                 min-height: 100vh;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-family: gothic;
+                background-size: 200%;
+                transition: 1.5s ease;
             }
-            
+
             .title{
+                width: 80%;
+                margin: 0 auto;
                 font-size: 3vw;
                 text-align: center;
-                color:white;
-                font-weight: bold;
+                color:#3266cc;
+                font-weight:900;
                 padding: 20px;
                 text-shadow: 3px 3px 5px rgba(255,255,255,0.2);
             }
 
             .cards{
                 display: flex;
-                width: 100%;
+                width: 90%;
+                margin: 20px auto;
                 flex-direction: row;
                 justify-content: space-evenly;
                 align-items: stretch;
                 flex-wrap: wrap;
+                gap:40px;
             }
 
             .card{
@@ -38,16 +55,16 @@
                 border: solid 5px white;
                 border-radius: 20px;
                 padding: 10px;
-                margin: 10px;
                 color: white;
                 text-align: center;
                 cursor: pointer;
                 transition: ease 0.1s;
-                background: #F08113;
+                background: #3266cc;
+                opacity: 0.9;
             }
 
             .card:hover{
-                opacity: 0.8;
+                opacity: 1;
             }
 
             .cardmini{
@@ -62,7 +79,21 @@
                 cursor: pointer;
                 transition: ease 0.1s;
                 background: #F08113;
-                width: 15%;
+                opacity: 0.9;
+                min-width: 13%;
+                max-width: fit-content;
+                letter-spacing: 1px;
+                font-weight: bold;
+            }
+            
+            .cardmini:hover{
+                opacity: 1;
+            }
+
+            .naziv{
+                letter-spacing: 1px;
+                font-family: montserrat;
+                font-weight:900;
             }
 
             @media screen and (max-width: 700px) {
@@ -78,27 +109,45 @@
                 }
 
                 .cardmini{
-                    width: 35%;
+                    min-width: 40%;
+                    font-size: 2.5vh;
                 }
             }
         </style>
 
         <script>
+
+            var current=true;
+
+            function promenaPozadine(){
+                if(current)
+                    document.body.style.backgroundPosition="-50px";
+                else
+                document.body.style.backgroundPosition="0px";
+                current= !current;
+                }
+
             function postavi(){
                 let niz=document.getElementsByClassName("card");
                 let niz2=document.getElementsByClassName("cardmini");
+                let niz3=document.getElementsByClassName("naziv");
 
                 for(let i=0;i<niz.length;i++)
                 {
-                    let r=128+Math.floor(Math.random()*128);
-                    let g=128+Math.floor(Math.random()*128);
-                    let b=128+Math.floor(Math.random()*128);
-                    console.log("rgb("+r+","+g+","+b+")")
+                    let r=90+Math.floor(Math.random()*128);
+                    let g=90+Math.floor(Math.random()*128);
+                    let b=90+Math.floor(Math.random()*128);
+                    
                     niz[i].style.borderColor="rgb("+r+","+g+","+b+")";
                     niz[i].style.boxShadow="3px 3px 10px 10px rgba("+r+","+g+","+b+",0.5)";
                     niz2[i].style.borderColor="rgb("+r+","+g+","+b+")";
                     niz2[i].style.boxShadow="3px 3px 10px 10px rgba("+r+","+g+","+b+",0.5)";
+                    r+=38;g+=38;b+=38;
+                    niz3[i].style.color="rgb("+r+","+g+","+b+")";
                 }
+
+                promenaPozadine();
+                window.setInterval(promenaPozadine,2000);
             }
         </script>
         
@@ -109,7 +158,7 @@
         </div>
         <div class="cards">
             <div class="card" onclick="window.open('template/index.html')">
-                <b>Template</b>
+                <b class="naziv">Template</b>
                 <br><br>
                 Prazan projekat koji sadrži:
                 <ol style="text-align: left;">
@@ -118,52 +167,52 @@
                 </ol>
             </div>
             <div class="card" onclick="window.open('primer1/index.html')">
-                <b>Primer1</b>
+                <b class="naziv">Primer 1</b>
                 <br><br>
                 U ovom primeru se nalazi jedna HTML stranica sa osnovnim tag-ovima i stilovima definisanim u style-u u okviru samog elementa.
             </div>
             <div class="card" onclick="window.open('primer2/index.html')">
-                <b>Primer2</b>
+                <b class="naziv">Primer 2</b>
                 <br><br>
                 Ovde možete videti primer jedne <b>forme</b> sa različitim tipovima polja.
             </div>
             <div class="card" onclick="window.open('primer3/index.html')">
-                <b>Primer3</b>
+                <b class="naziv">Primer 3</b>
                 <br><br>
                 Primer jedne jednostavne stranice sa menijem i sekcijama, stilovi su pisani u eksternom CSS fajlu. 
             </div>
             <div class="card" onclick="window.open('primer4/index.html')">
-                <b>Primer4</b>
+                <b class="naziv">Primer 4</b>
                 <br><br>
                 Primer animacije i tranzicije na elementima.
             </div>
             <div class="card" onclick="window.open('primer5/index.html')">
-                <b>Primer5</b>
+                <b class="naziv">Primer 5</b>
                 <br><br>
                 Primer responzivne stranice i dodatnih stilova u CSS-u. Stranica menja izgled u odnosu na širinu ekrana i ima 3 stanja.
             </div>
             <div class="card" onclick="window.open('primer6/index.html')">
-                <b>Primer6</b>
+                <b class="naziv">Primer 6</b>
                 <br><br>
                 Primer sa JavaScript-om, rad sa poljima, nizovima, ispis clanova, sabiranje, suma svih, sortiranje i dr.
             </div>
             <div class="card" onclick="window.open('primer7/index.html')">
-                <b>Primer7</b>
+                <b class="naziv">Primer 7</b>
                 <br><br>
                 Primer menija sa dugmetom (burger menu), primer onmouseover i onmouseout sa dodavanjem div-ova direktno u HTML-u i korišćenjem JavaScript-a.
             </div>
             <div class="card" onclick="window.open('primer8/index.html')">
-                <b>Primer8</b>
+                <b class="naziv">Primer 8</b>
                 <br><br>
                 Primer sa pomeranjem div-ova i dugmetom za reset.
             </div>
             <div class="card" onclick="window.open('primer9/index.html')">
-                <b>Primer9</b>
+                <b class="naziv">Primer 9</b>
                 <br><br>
                 Primer sa input type="range", promenom pozadine i sa promenom vrednosti na slučajne brojeve. Pokazana su dva primera dobijanja nasumičnih vrednosti.
             </div>
             <div class="card" onclick="window.open('asocijacije/index.html')">
-                <b>Asocijacije</b>
+                <b class="naziv">Asocijacije</b>
                 <br><br>
                 Primer implementacije igre asocijacije za jednog igrača, odrađene korišćenjem HTML, CSS i JavaScript jezika.
             </div>
