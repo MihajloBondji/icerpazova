@@ -5,7 +5,7 @@ var brojdivova=0;
 function prikaziDiv(x){
 
     for(let i=0;i<x;i++)
-        document.body.innerHTML+="<div class='test' onclick='pomeri(this.id)' id='div"+i+"'></div>";
+        document.body.innerHTML+="<div class='test' onclick='pomeri(this.id)' id='div"+i+"'>Klikni me!</div>";
     brojdivova=x;
 }
 
@@ -20,6 +20,7 @@ function pomeri(id){
 function resetDiv(){
     for(let i=0;i<brojdivova;i++)
         document.getElementById("div"+i).style.left=0;
+    procenat=0;
 }
 
 /*
