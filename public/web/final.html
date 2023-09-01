@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final exam - homework</title>
+        <link rel="icon" type="image/png" href="../favicon.png">
+        <meta charset="UTF-8">
+        <style>
+
+            @font-face {
+                font-family: gothic;
+                src: url("../fonts/gothic.woff") format('woff'),url("../fonts/gothic.TTF") format('ttf');
+                font-display: swap;
+            }
+
+            body{
+                font-family: gothic;
+                font-size: 1.5em;
+                background: #3c68c1;
+                color:white;
+                transition: background 3s ease;
+            }
+
+            b{
+                color: #F08113;
+                font-weight: 900;
+            }
+
+            i{
+                font-size: 0.7em;
+            }
+        </style>
+
+        <script>
+            var current=1;
+            function chng(){
+                document.body.style.background=current?"#2163e8":"#3c68c1";
+                current=!current;
+            }
+        </script>
+    </head>
+    <body onload="chng();window.setInterval(chng,4000);">
+        <h1>Zahtevi i predlozi za projekat:</h1>
+
+        <p>
+            Potrebno je napraviti jednostavan veb-sajt koristeći <b>HTML, CSS i JavaScript</b>.
+            <br>
+            <i> Dozvoljena je upotreba i ostalih jezika i tehnologija.</i>
+        </p>
+
+        <ul>
+            <li>HTML struktura sa raznovrsnim elementima</li>
+            <li>Lep izgled stranice</li>
+            <li>Responzivan dizajn, prilagođen za različite uređaje</li>
+            <li>Podržava najpopularnije pretraživače</li>
+            <li>Postojanje raznih funkcionalnosti korišćenjem JavaScript-a</li>
+            <li>Sajt je potrebno da bude postavljen javno na GitHub-u i da bude hostovan na Firebase-u.</li>
+        </ul>
+
+            Potrebno je iskoristiti sve što smo radili na časovima, a obavezno imati bar sledeće stvari: 
+            <ul>
+            <li>
+            Od HTML tagova: div, span, a, input, img, br, ol/ul, svg i specijalne simbole
+            </li>
+            <li>
+            CSS: klase, animacije, tranzicije, :hover/:active...
+            </li>
+            <li>
+            Javascript: nekoliko funkcija, koristiti u HTML-u onload/onclick, if else, for, nizove, menjati stilove elemenata, menjati innerHTML ili value elementima
+            </li>
+            <li>
+            Potrebno je postaviti neku ikonicu za favicon, ubaciti neki iframe i koristiti neke stvari koje nismo odradili na časovima
+            </li>
+        </ul>
+
+        <h3>Predlozi:</h3>
+        <ul>
+            <li>Jednostavna stranica po izboru</li>
+            <ul>
+                <li>Veb-sajt za kafić</li>
+                <li>Veb-sajt za butik</li>
+                <li>Veb-sajt za bioskop</li>
+                <li>Veb-sajt za firmu…</li>
+            </ul>
+            <li>Interaktivne igre</li>
+            <ul>
+                <li>Igrica</li>
+                <li>Društvena igra (Jamb, ne ljuti se čoveče...)</li>
+                <li>Kviz</li>
+            </ul>
+            <li>Interaktivna knjiga/e-knjiga</li>
+            <li>Korisni alati</li>
+            <ul>
+                <li>Kalkulator</li>
+                <li>To-do lista</li>
+                <li>Tajmer, štoperica</li>
+                <li>Konvertor, menjačnica...</li>
+            </ul>
+            <li>Pregled primera dobrih stilova i funkcionalnosti</li>
+            <ul>
+                <li>Primeri različitih menija</li>
+                <li>Primeri zanimljivih animacija</li>
+                <li>Primeri lepih dugmića...</li>
+            </ul>
+            <li>Lični CV/Portfolio</li>
+        </ul>
+
+        <h2>Najbitniji zahtev: budite kreativni, vredni, napravite nešto čime ćete biti ponosni, što ćete želeti da prezentujete drugima. Cilj je da naučite nešto što će vam sutra biti korisno, a ne da biste samo formalno završili ovaj kurs. 	&#128516; </h2>
+    </body>
+</html>
