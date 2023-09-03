@@ -26,6 +26,8 @@ overflow-x:hidden;
 background-image: linear-gradient(45deg, #3266cc 1.76%, #ffffff 1.76%, #ffffff 25.29%, #f08113 25.29%, #f08113 26.47%, #fff 26.47%, #fff 50%, #3266cc 50%, #3266cc 51.76%, #ffffff 51.76%, #ffffff 75.29%, #f08113 75.29%, #f08113 76.47%, #fff 76.47%, #fff 100%);
 background-size: 120.21px 120.21px;
 text-align: center;
+background-position:0px;
+transition: background-position 2s ease;
 }
 
 html{

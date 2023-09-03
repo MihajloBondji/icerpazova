@@ -19,18 +19,33 @@
 	  </script>
 	  <style>
 		.sertifikatTemplate{
-    		background: url(../files/rob3d.png) no-repeat;
+    		background: url(../files/web.png) no-repeat;
 			width: 60vw;
-			height:42.34vw;
+			height:41.54vw;
 			position: relative;
 			margin:2vw auto;
 			background-size: 100% auto;
 		}
-		@media screen and (max-width:800px){
+
+		.broj{
+			position: absolute;
+			top:90.3%;
+			left:7.5%;
+			text-align: center;
+			font-size: 1vw;
+			font-family: gothic;
+			color:white;
+			font-weight: 900;
+		}
+				@media screen and (max-width:800px){
     .sertifikatTemplate{
         width:90vw;
-        height: 63.51vw;
+        height: 62.31vw;
     } 
+
+    .broj{
+        font-size: 1.5vw;
+    }
 }
 	  </style>
 	  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11065114940"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11065114940'); </script>
@@ -45,19 +60,19 @@
 		</div>
 
 		<div class="desc" id="desc">
-			Ovaj sertifikat je <b>validan</b> i potvrđuje da je <b><span id="imeiprezime"></span></b> odslušao/la kurs robotike i 3D štampe koji obuhvata:
+			Ovaj sertifikat je <b>validan</b> i potvrđuje da je <b><span id="imeiprezime"></span></b> odslušao/la kurs Web development koji obuhvata osnove:
 			<br><br>
-			<b>Robotika</b>
 			<ol>
-			<li>Osnove Arduino mikrokontrolera</li>
-			<li>Poznavanje osnovnih elektronskih komponenti</li>
-			<li>Rad sa komponentama iz arduino starter kit-a</li>
-			<li>Sklapanje jednostavnog robota</li>
-			</ol>
-			<b>3D štampa</b>
-			<ol>
-			<li>Rad sa 3D štampačima</li>
-			<li>Rad sa Autodesk Fusion360 programom</li>
+				<li><b>HTML</b></li><br>
+				<li><b>CSS</b></li><br>
+				<li><b>JavaScript</b></li><br>
+				<li>
+					<b>Ostalo</b>
+					<ul>
+						<li>Samostalna izrada veb-sajta</li>
+						<li>Hosting sa Firebase-om</li>
+					</ul>
+				</li>
 			</ol>
 		</div>
 		
@@ -65,49 +80,26 @@
 	<script>
 		var lista=[
 		"Neispravan link",
-		"Aleksa Duić",
-		"Aleksa Đurić",
-		"Aleksa Vujaklija",
-		"Ana Ilić",
-		"Andrea Bubnjar",
-		"Andrea Đekić",
-		"Anja Crnobrnja",
-		"Anja Rusić",
-		"Damjan Zagorac",
-		"Daniel Vereš",
-		"Dušan Pajić",
-		"Filip Stanišić",
-		"Jovan Jovanović",
-		"Komnen Dragaš",
-		"Konstantin Ranđelović",
-		"Mario Očovaj",
-		"Maša Railić",
-		"Mateja Prelovac",
-		"Mihajlo Bulić",
-		"Mihajlo Kasapski",
-		"Mihajlo Pavković",
-		"Mihajlo Stanišić",
-		"Milan Tripković",
-		"Nemanja Vasović",
-		"Ognjen Dotlić",
-		"Ognjen Radulović",
-		"Slavko Milivojević",
-		"Stefan Bogovac",
-		"Stefan Kasagić",
-		"Tijana Jekić",
-		"Uroš Blažić",
-		"Viktor Ilić",
-		"Viktor Šušnjar",
-		"Viktorija Grubić",
-		"Vjera Gutić",
-		"Vuk Gvozdenac",
-		"Vuk Ulemek",
-		"Vukašin Mandić"
+		"Bogdan Vujičić",
+		"Danijela Savić",
+		"Dušan Jović",
+		"Dušan Lađević",
+		"Lazar Verić",
+		"Ljubomir Simić",
+		"Milica Dabić",
+		"Milica Jurišić",
+		"Nemanja Kostovski",
+		"Nikola Bulić",
+		"Nina Pančić",
+		"Tijana Vesteg",
+		"Uglješa Lukešević",
+		"Vasilije Bogić",
+		"Vladan Žebeljan"
 		];
 
 		var url = new URL(window.location.href);
 		var c = url.searchParams.get("n");
-		if(c==null||c<=0||c>=39)
+		if(c==null||c<=0||c>=16)
 		{
 			c=0;
 			//location.href="../../404.html";
@@ -115,11 +107,11 @@
 		c=c-0;
 		document.getElementById("ime").innerHTML=lista[c];
 		document.getElementById("imeiprezime").innerHTML=lista[c];
-		c+=300;
-		document.getElementById("broj").innerHTML=c+"/2022";
+		c+=100;
+		document.getElementById("broj").innerHTML=c+"/2023";
 		
 	window.addEventListener("scroll", scrollScript);
-	
+
 	var current=1;
 	function promenaPozadine(){
         if(current)

@@ -19,7 +19,7 @@
 	  </script>
 	  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11065114940"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11065114940'); </script>
   </head>
-  <body>
+  <body onload="promenaPozadine();">
 	<div class="main">
 
 		<div class="sertifikatTemplate shadow" id="sertifikatTemplate">
@@ -132,6 +132,15 @@
 		document.getElementById("broj").innerHTML=c+"/2022";
 		
 	window.addEventListener("scroll", scrollScript);
+	var current=1;
+	function promenaPozadine(){
+        if(current)
+            document.body.style.backgroundPosition="-50px";
+        else
+        	document.body.style.backgroundPosition="0px";
+        current= !current;
+        }
+        window.setInterval(promenaPozadine,2000);
 	</script>
   </body>
  </html>
