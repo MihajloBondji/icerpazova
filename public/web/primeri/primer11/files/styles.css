@@ -1,0 +1,19 @@
+/*
+    Ispod se pišu klase koje važe za celu stranicu.
+*/
+
+body{
+    margin: 0;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+/*
+    Ispod se pišu klase koje važe za stranicu do maksimalne širine navedene u zagradama ( max-width: __px ).
+*/
+@media screen and ( max-width: 1000px ){
+
+}

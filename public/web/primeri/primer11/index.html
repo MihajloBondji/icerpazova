@@ -1,0 +1,36 @@
+<!--
+Ovo je osnovna struktura jedne HTML stranice koja ima tri eksterna fajla:
+    styles.css - za stilove napisane u CSS-u;
+    script.js - za JavaScript kod;
+    favicon.ico - ikonica koja se prikazuje u kartici pretraživača.
+    Takođe, u <head> delu se nalazi i <meta> tag koji nam omogućava da pravimo responzivne stranice, odnosno za uređaje različitih širina ekrana.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Primer 11</title>
+        <link rel="stylesheet" href="files/styles.css">
+        <script src="files/script.js"></script>
+        <link rel="icon" type="image/x-icon" href="files/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <button onclick="pomeriLevo('primer0',0)">&#8592;</button>
+        <img src="files/slika01.jpg" id="primer0">
+        <button onclick="pomeriDesno('primer0',0)">&#8594;</button>
+
+        <br>
+
+        <button onclick="pomeriLevo('primer1',1)">&#8592;</button>
+        <img src="files/slika11.jpg" id="primer1">
+        <button onclick="pomeriDesno('primer1',1)">&#8594;</button>
+
+        <br>
+
+        <button onclick="pomeriLevo('primer2',2)">&#8592;</button>
+        <img src="files/slika21.jpg" id="primer2">
+        <button onclick="pomeriDesno('primer2',2)">&#8594;</button>
+        <br>
+    </body>
+</html>
