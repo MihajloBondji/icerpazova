@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Završni radovi / Takmičenje</title>
+        <link rel="icon" type="image/png" href="../favicon.png">
+        <meta charset="UTF-8">
+		<meta property="og:image" content="https://icerpazova.com/web/final.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+
+            @font-face {
+                font-family: gothic;
+                src: url("../fonts/gothic.woff") format('woff'),url("../fonts/gothic.TTF") format('ttf');
+                font-display: swap;
+            }
+
+            body{
+                font-family: gothic;
+                font-size: 1.5em;
+                background: #3c68c1;
+                color:white;
+	            background: linear-gradient(270deg, #3266cc, #0091f1);
+	            background-size: 400% 400%;
+            
+                -webkit-animation: AnimationNames 5s ease infinite;
+                -moz-animation: AnimationNames 5s ease infinite;
+                -o-animation: AnimationNames 5s ease infinite;
+                animation: AnimationNames 5s ease infinite;
+                }
+                
+                @-webkit-keyframes AnimationNames {
+                    0%{background-position:0% 0%}
+                    25%{background-position:50% 0%}
+                    50%{background-position:100% 50%}
+                    75%{background-position:50% 100%}
+                    100%{background-position:0% 0%}
+                }
+                @-moz-keyframes AnimationNames {
+                    0%{background-position:0% 0%}
+                    25%{background-position:50% 0%}
+                    50%{background-position:100% 50%}
+                    75%{background-position:50% 100%}
+                    100%{background-position:0% 0%}
+                }
+                @-o-keyframes AnimationNames {
+                    0%{background-position:0% 0%}
+                    25%{background-position:50% 0%}
+                    50%{background-position:100% 50%}
+                    75%{background-position:50% 100%}
+                    100%{background-position:0% 0%}
+                }
+                @keyframes AnimationNames {
+                    0%{background-position:0% 0%}
+                    25%{background-position:50% 0%}
+                    50%{background-position:100% 50%}
+                    75%{background-position:50% 100%}
+                    100%{background-position:0% 0%}
+                }
+            h1, h3{
+                text-align: center;
+            }
+
+            b{
+                color: #F08113;
+                font-weight: 900;
+            }
+
+            i{
+                font-size: 0.7em;
+            }
+
+            .all{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: stretch;
+                width: 100%;
+                row-gap: 30px;
+                margin-bottom: 50px;
+            }
+
+            .card{
+                width: 27%;
+                border: solid rgba(255, 255, 255,.5) 3px;
+                border-radius: 25px;
+                background: rgba(255, 255, 255,.2);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                font-size: 20px;
+                cursor: pointer;
+                transition: 0.2s ease;
+                gap:10px;
+                opacity: .9;
+            }
+
+            .card:hover{
+                opacity: 1;
+                border-color: gold;
+                -webkit-box-shadow:0px 0px 38px 0px gold;
+                -moz-box-shadow: 0px 0px 38px 0px gold;
+                box-shadow: 0px 0px 38px 0px gold;
+            }
+
+            .card img{
+                width: 80%;
+                margin: 5px auto;
+            }
+
+            .card b{
+                width: 90%;
+                color: white;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .card span{
+                width: 90%;
+            }
+
+            .name{
+                width: 100%;
+                text-align: right;
+                padding-top: 10px;
+            }
+
+            .name::before{
+                content: " - ";
+            }
+
+        @media screen and ( max-width:700px ){
+                .all{
+                    flex-direction: column;
+                }
+
+                .card{
+                    width: 90%;
+                }
+        }
+        </style>
+
+        <script>
+        </script>
+    </head>
+    <body>
+        <h1>Završni projekti</h1>
+        <h3>Mlađa grupa</h3>
+        <div class="all">
+            <div class="card" onclick="window.open('https:\/\/danijela-test-web.web.app')">
+                <b>Cvećara Kolibri</b>
+                <img src="files/1.jpg">
+                <span>
+                    Prodaja cveća. Sajt za cvećaru.    
+                </span>
+                <span class="name">Danijela Savić</span>
+            </div>
+            <div class="card" onclick="window.open('https:\/\/gallery-my.web.app')">
+                <b>Moja galerija</b>
+                <img src="files/2.jpg">
+                <span>
+                    Galerija u koju se slike uploaduju sa računara i čuvaju se u database, slike se prikazuju i može da se napiše opis fotografije.
+                </span>
+                <span class="name">Bogdan Vujičić</span>
+            </div>
+            <div class="card" onclick="window.open('https:\/\/rare-beauty-9c5fa.web.app')">
+                <b>Rare Beauty</b>
+                <img src="files/3.jpg">
+                <span>
+                    Sajt o kozmetici, brend Selene Gomez.
+                </span>
+                <span class="name">Nina Pančić</span>
+            </div>
+            <div class="card" onclick="window.open('https:\/\/last-folder.web.app')">
+                <b>Among us</b>
+                <img src="files/4.jpg">
+                <span>
+                    Sajt Among us.
+                </span>
+                <span class="name">Nikola Bulić</span>
+            </div>
+            <div class="card" onclick="window.open('https:\/\/sajt-5a787.web.app')">
+                <b>Ketering</b>
+                <img src="files/5.jpg">
+                <span>
+                    Sajt za ketering brze hrane.
+                </span>
+                <span class="name">Dušan Jović</span>
+            </div>
+            <div class="card" onclick="window.open('https:\/\/torte-i-kolaci-dunja.web.app')">
+                <b>Torte i kolači Dunja</b>
+                <img src="files/6.jpg">
+                <span>
+                    Sajt za prikazivanje Dunjinih torta i kolača.
+                </span>
+                <span class="name">Dušan Lađević</span>
+            </div>
+           
+        </div>
+        <br><br><br>
+        <h3>Starija grupa</h3>
+        <div class="all">
+            <div class="card" onclick="window.open('https:\/\/streaming-sigma-red.vercel.app')">
+                <b>StreamingMax</b>
+                <img src="files/s1.jpg">
+                <span>
+                    Mini klon hbomax streaming servisa, gde mogu svi filmovi da se izlistaju i odgledaju trejleri za iste. Napravljeno uz pomoć movieDB API, tehnologijama NextJS 13, Tailwind, Typescript. Korišćen je i custom css za pojedine detalje.
+                </span>
+                <span class="name">Nemanja Kostovski</span>
+            </div>
+            <div class="card" onclick="window.open('https:\/\/estemed-ordinacija.web.app')">
+                <b>Estemed Estetska Ordinacija</b>
+                <img src="files/s2.jpg">
+                <span>
+                    Veb-stranica za klijenta, trenutko služi za predstavljanje ordinacije a u planu je dodavanje teksta o tretmanima posebno i možda cenovnika.
+                </span>
+                <span class="name">Milica Jurišić</span>
+            </div>
+            <div class="card" onclick="window.open('https:\/\/icer-test-ljuba.firebaseapp.com')">
+                <b>Sajt u izradi</b>
+                <img src="files/s3.jpg">
+                <span>
+                    Ljubin test sajt u izradi.
+                </span>
+                <span class="name">Ljubomir Simić</span>
+            </div>
+            <div class="card" onclick="window.open('https:\/\/ukicomputers.web.app')">
+                <b>ukicomputers</b>
+                <img src="files/s4.jpg">
+                <span>
+                    Sajt prikazuje robotsku ruku za branje jagoda.
+                </span>
+                <span class="name">Uglješa Lukešević</span>
+            </div>
+            <div class="card" onclick="window.open('https:\/\/abmiis-candle.web.app')">
+                <b>Ambiis sveće - zavirite u naš svet</b>
+                <img src="files/s5.jpg">
+                <span>
+                    Sajt je urađen na osnovu ideje za otvaranjem male preduzetničke firme koja bi se bavila proizvodnjom i prodajom sveća. 
+                </span>
+                <span class="name">Tijana Vesteg</span>
+            </div>
+            <div class="card" onclick="window.open('https:\/\/cinema-2b7c0.web.app/')">
+                <b>Movie area</b>
+                <img src="files/s6.jpg">
+                <span>
+                    Sajt sa omiljenim filmovima.
+                </span>
+                <span class="name">Milica Dabić</span>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
