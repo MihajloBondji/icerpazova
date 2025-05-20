@@ -1,0 +1,92 @@
+<!--Created by Mihajlo Bondji http://mihajlobondji.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <title>ICER - Sertifikati</title>
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	  <link rel="shortcut icon" type="image/jpg" href="../../favicon.png"/>
+	  
+	  <link rel="stylesheet" href="../files/css.css" />
+	  <script>
+		
+	var scrollScript = function(){
+	var scr=window.scrollY;
+		if(scr>0)
+			document.getElementById("arr").className="displnone";
+		else document.getElementById("arr").className="downarr";
+	}
+	  </script>
+	  <style>
+		.sertifikatTemplate{
+    		background: url(../files/3d.png) no-repeat;
+			width: 60vw;
+			height:42.34vw;
+			position: relative;
+			margin:2vw auto;
+			background-size: 100% auto;
+		}
+		@media screen and (max-width:800px){
+    .sertifikatTemplate{
+        width:90vw;
+        height: 63.51vw;
+    } 
+}
+	  </style>
+	  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11065114940"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11065114940'); </script>
+  </head>
+  <body onload="promenaPozadine();">
+	<div class="main">
+
+		<div class="sertifikatTemplate shadow" id="sertifikatTemplate">
+			<img src="../../files/arr.svg" class="downarr" id="arr">
+			<div class="ime" id="ime"></div>
+			<div class="broj" id="broj"></div>
+		</div>
+
+		<div class="desc" id="desc">
+			Ovaj sertifikat je <b>validan</b> i potvrđuje da je <b><span id="imeiprezime"></span></b> odslušao/la kurs 3D štampe koji obuhvata:
+			<br><br>
+			<b>3D štampa</b>
+			<ol>
+			<li>Rad sa 3D štampačima</li>
+			<li>Rad sa Autodesk Fusion360 programom</li>
+			<li>Rad sa Slicer programima</li>
+			</ol>
+		</div>
+		
+	</div>
+	<script>
+		var lista=[
+		"Neispravan link",
+		"Anđela Oreščanin",
+		"Milena Ekmedžić",
+		"Mark Obradović",
+		"David Čmelik"
+		];
+
+		var url = new URL(window.location.href);
+		var c = url.searchParams.get("n");
+		if(c==null||c<=0||c>=5)
+		{
+			c=0;
+			//location.href="../../404.html";
+		}
+		document.getElementById("ime").innerHTML=lista[c];
+		document.getElementById("imeiprezime").innerHTML=lista[c];
+		document.getElementById("broj").innerHTML="00" + url.searchParams.get("n")+"/2025";
+		
+	window.addEventListener("scroll", scrollScript);
+	
+	var current=1;
+	function promenaPozadine(){
+        if(current)
+            document.body.style.backgroundPosition="-50px";
+        else
+        	document.body.style.backgroundPosition="0px";
+        current= !current;
+        }
+        window.setInterval(promenaPozadine,2000);
+	</script>
+  </body>
+ </html>
